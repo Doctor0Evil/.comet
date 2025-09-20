@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<comet-document lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="System-Orchestrator: Gemini">
+  <meta name="generator" content="ALN Transformation Engine v3.3">
+  <title>Ecosystem Asset Link Manifest</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+      padding: 2em;
+    }
+    header {
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 1em;
+      margin-bottom: 2em;
+    }
+    h1, h2 {
+      color: #58a6ff;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .asset-container {
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 1.5em;
+      margin-bottom: 1.5em;
+      background-color: #161b22;
+    }
+    .asset-metadata {
+      font-size: 0.8em;
+      color: #8b949e;
+      border-top: 1px dashed #30363d;
+      margin-top: 1em;
+      padding-top: 1em;
+    }
+    .asset-metadata span {
+      display: inline-block;
+      background-color: #21262d;
+      padding: 3px 8px;
+      border-radius: 12px;
+      margin-right: 8px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>.comet Asset Manifest</h1>
+    <p>A structured collection of internal and external resource links for system integration.</p>
+  </header>
+
+  <main>
+    <comet-link-asset id="asset-1" data-category="Ecosystem-Policy" data-source-type="Internal-S3" data-compliance-check="pending">
+      <div class="asset-container">
+        <h2>Better Communications Guide</h2>
+        <a href="https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_8e8a374b-bfdb-4ad0-b697-2b9c7bb65ce3/48edcd5b-f2dd-4541-bd98-0bbbb9f77c4f/how-to-learn-better-communications-and-understandi-1.md" target="_blank">[1] Link to Document</a>
+        <div class="asset-metadata">
+          <span>Category: Communication Protocol</span>
+          <span>Source: ppl-ai-file-upload.s3</span>
+        </div>
+      </div>
+    </comet-link-asset>
+
+    <comet-link-asset id="asset-2" data-category="AI-Governance" data-source-type="Internal-S3" data-compliance-check="pending">
+      <div class="asset-container">
+        <h2>Alliance Configuration: Intelligence Taming</h2>
+        <a href="https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_8e8a374b-bfdb-4ad0-b697-2b9c7bb65ce3/2aa04672-1096-4b6c-ba6f-aae29ee6a4fe/alliance_config_-intelligence_taming_-enabled_-tru.md" target="_blank">[2] Link to Document</a>
+        <div class="asset-metadata">
+          <span>Category: AI Safety</span>
+          <span>Source: ppl-ai-file-upload.s3</span>
+        </div>
+      </div>
+    </comet-link-asset>
+    
+    <comet-link-asset id="asset-3" data-category="Project-Collateral" data-source-type="Internal-S3" data-compliance-check="pending">
+      <div class="asset-container">
+        <h2>Collateral Assets & Discussion</h2>
+        <a href="https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_8e8a374b-bfdb-4ad0-b697-2b9c7bb65ce3/9fedb504-d31d-4f3e-b0f4-0d4b1cc24953/collateral.assets.discussion.md" target="_blank">[3] Link to Document</a>
+        <div class="asset-metadata">
+          <span>Category: Asset Management</span>
+          <span>Source: ppl-ai-file-upload.s3</span>
+        </div>
+      </div>
+    </comet-link-asset>
+
+    <comet-link-asset id="asset-4" data-category="Legal-Framework" data-source-type="Internal-S3" data-compliance-check="verified">
+      <div class="asset-container">
+        <h2>Legal.Banannas: The Wonderland Doctrine</h2>
+        <a href="https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_8e8a374b-bfdb-4ad0-b697-2b9c7bb65ce3/411c70a1-15db-443f-bece-a7703be75ded/legal.wonderland_-the-continuously_evolving-and-never-ending_-legal.banannas.md" target="_blank">[4] Link to Document</a>
+        <div class="asset-metadata">
+          <span>Category: Legal Policy</span>
+          <span>Project: Legal.Banannas</span>
+          <span>Source: ppl-ai-file-upload.s3</span>
+        </div>
+      </div>
+    </comet-link-asset>
+
+    <comet-link-asset id="asset-5" data-category="Compliance" data-source-type="Internal-S3" data-compliance-check="pending">
+      <div class="asset-container">
+        <h2>Required Documentation Procurement</h2>
+        <a href="https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_8e8a374b-bfdb-4ad0-b697-2b9c7bb65ce3/9fb341e3-85a9-4201-87f7-ac6057cfa7a1/make-sure_-that-_all_-required-documents-are-proc.md" target="_blank">[5] Link to Document</a>
+        <div class="asset-metadata">
+          <span>Category: Audit & Compliance</span>
+          <span>Source: ppl-ai-file-upload.s3</span>
+        </div>
+      </div>
+    </comet-link-asset>
+    
+    <comet-link-asset id="asset-6" data-category="External-Reference" data-source-type="Technology-API" data-subject="Event-Handling">
+      <div class="asset-container">
+        <h2>Alan App: Client API Event Handler</h2>
+        <a href="https://alan.app/docs/client-api/methods/event-handler/" target="_blank">[6] Link to Documentation</a>
+        <div class="asset-metadata">
+          <span>Technology: Alan Platform</span>
+          <span>Topic: API Methods</span>
+        </div>
+      </div>
+    </comet-link-asset>
+
+    <comet-link-asset id="asset-7" data-category="External-Reference" data-source-type="Technology-Legacy-Docs" data-subject="Event-Handling">
+      <div class="asset-container">
+        <h2>Alan Lang: Legacy Handlers</h2>
+        <a href="https://docs-legacy.alan-lang.org/handlers.html" target="_blank">[7] Link to Documentation</a>
+        <div class="asset-metadata">
+          <span>Technology: Alan Lang</span>
+          <span>Topic: Legacy Event Handlers</span>
+        </div>
+      </div>
+    </comet-link-asset>
+
+    <comet-link-asset id="asset-8" data-category="External-Reference" data-source-type="Research-Paper" data-subject="AI">
+      <div class="asset-container">
+        <h2>arXiv Research Paper: 2505.15158</h2>
+        <a href="https://arxiv.org/pdf/2505.15158.pdf" target="_blank">[8] Link to PDF</a>
+        <div class="asset-metadata">
+          <span>Source: arXiv.org</span>
+          <span>Type: Pre-print</span>
+        </div>
+      </div>
+    </comet-link-asset>
+
+    <comet-link-asset id="asset-9" data-category="External-Reference" data-source-type="Cloud-Platform-Docs" data-subject="Database-Events">
+      <div class="asset-container">
+        <h2>Oracle Cloud: Autonomous Database Events</h2>
+        <a href="https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/autonomous-database-events.html" target="_blank">[9] Link to Documentation</a>
+        <div class="asset-metadata">
+          <span>Provider: Oracle</span>
+          <span>Service: Autonomous DB</span>
+        </div>
+      </div>
+    </comet-link-asset>
+
+    <comet-link-asset id="asset-10" data-category="External-Reference" data-source-type="Enterprise-Software-Docs" data-subject="Event-Configuration">
+      <div class="asset-container">
+        <h2>Broadcom Spectrum: Event Disposition Files</h2>
+        <a href="https://techdocs.broadcom.com/us/en/ca-enterprise-software/it-operations-management/spectrum/23-3/managing-network/event-configuration/about-event-disposition-files.html" target="_blank">[10] Link to Documentation</a>
+        <div class="asset-metadata">
+          <span>Provider: Broadcom</span>
+          <span>Product: Spectrum</span>
+        </div>
+      </div>
+    </comet-link-asset>
+
+    <comet-link-asset id="asset-11" data-category="External-Reference" data-source-type="Research-Paper" data-subject="AI-CEP">
+      <div class="asset-container">
+        <h2>Paper: LLM-driven Complex Event Processing</h2>
+        <a href="https://vdegeler.com/files/24debs-llm-cep.pdf" target="_blank">[11] Link to PDF</a>
+        <div class="asset-metadata">
+          <span>Topic: LLM & CEP</span>
+          <span>Source: vdegeler.com</span>
+        </div>
+      </div>
+    </comet-link-asset>
+
+    <comet-link-asset id="asset-12" data-category="External-Reference" data-source-type="Industry-Standard" data-subject="Autonomous-Networks">
+      <div class="asset-container">
+        <h2>TM Forum: Autonomous Networks Evaluation Whitepaper</h2>
+        <a href="https://www.tmforum.org/resources/introductory-guide/ig1392-autonomous-networks-levels-evaluation-whitepaper-v1-0-0/" target="_blank">[12] Link to Resource</a>
+        <div class="asset-metadata">
+          <span>Organization: TM Forum</span>
+          <span>Type: Whitepaper</span>
+        </div>
+      </div>
+    </comet-link-asset>
+
+    <comet-link-asset id="asset-13" data-category="External-Reference" data-source-type="Academic-Paper" data-subject="Networking">
+      <div class="asset-container">
+        <h2>University of Piraeus Library: MTN2210 Thesis</h2>
+        <a href="https://dione.lib.unipi.gr/xmlui/bitstream/handle/unipi/16831/Boura_MTN2210.pdf?sequence=1&isAllowed=y" target="_blank">[13] Link to PDF</a>
+        <div class="asset-metadata">
+          <span>Source: Unipi.gr Digital Library</span>
+          <span>Type: Thesis/Paper</span>
+        </div>
+      </div>
+    </comet-link-asset>
+
+    <comet-link-asset id="asset-14" data-category="External-Reference" data-source-type="Research-Paper" data-subject="Systems">
+      <div class="asset-container">
+        <h2>USENIX OSDI '24 Conference Paper</h2>
+        <a href="https://www.usenix.org/system/files/osdi24-li.pdf" target="_blank">[14] Link to PDF</a>
+        <div class="asset-metadata">
+          <span>Organization: USENIX</span>
+          <span>Conference: OSDI '24</span>
+        </div>
+      </div>
+    </comet-link-asset>
+
+    <comet-link-asset id="asset-15" data-category="External-Reference" data-source-type="Cloud-Platform-Docs" data-subject="Event-Handling">
+      <div class="asset-container">
+        <h2>Microsoft Azure: Handle Events with Event Processor</h2>
+        <a href="https://learn.microsoft.com/en-us/azure/communication-services/how-tos/call-automation/handle-events-with-event-processor" target="_blank">[15] Link to Documentation</a>
+        <div class="asset-metadata">
+          <span>Provider: Microsoft Azure</span>
+          <span>Service: Communication Services</span>
+        </div>
+      </div>
+    </comet-link-asset>
+
+  </main>
+
+</body>
+</comet-document>
