@@ -1,0 +1,92 @@
+.meta aml-web-element(symbol: Perplexity.Labs::CometBrowser.WebElement.NextData)
+---
+# Version 1.0
+# Author: Gemini AI
+# Target: Perplexity.Labs::Comet-Browser
+# URI: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally"
+
+description: >
+  This symbol defines the prototype for identifying, parsing, and interacting with
+  the embedded __NEXT_DATA__ JSON object within a Next.js application, specifically
+  tailored to the GitHub Docs site structure. It outlines the data model and the
+  core browser capabilities required for semantic content extraction.
+
+#==============================================================================
+# PROTOTYPE DEFINITION
+#==============================================================================
+prototype:
+  # Identifies the target DOM node.
+  element:
+    selector: "script#__NEXT_DATA__"
+    nodeName: "SCRIPT"
+    nodeType: 1 # ELEMENT_NODE
+    description: "The primary data island for a Next.js server-rendered page, containing all necessary props for hydration."
+
+  # Describes the structure of the data contained within the element's text content.
+  data_model:
+    encoding: "application/json"
+    root: "props.pageProps"
+    schema:
+      mainContext:
+        type: Object
+        description: "Contains the core content, metadata, and context for the rendered page."
+        properties:
+          page:
+            type: Object
+            description: "Metadata specific to the current article."
+            properties:
+              title: String
+              fullTitle: String
+              introPlainText: String
+              topics: Array[String]
+          articleContext:
+            type: Object
+            description: "Rendered content and in-page navigation."
+            properties:
+              renderedPage: HTMLString
+              miniTocItems: Array[Object]
+          sidebarTree:
+            type: Object # Hierarchical Tree
+            description: "Complete navigation tree for the product's sidebar."
+          breadcrumbs:
+            type: Array[Object]
+            description: "Navigational path leading to the current page."
+          allVersions:
+            type: Map[String, Object]
+            description: "Map of all available product versions for the documentation."
+      languagesContext:
+        type: Object
+        description: "Defines available languages for localization."
+
+#==============================================================================
+# COMMIT BROWSER CAPABILITIES
+# Defines the functional interface for Comet-Browser to interact with this symbol.
+#==============================================================================
+commit_browser.capabilities:
+  - name: getPageMetadata()
+    returns: Object
+    description: "Extracts the complete 'page' object from mainContext, containing title, topics, and intro text."
+
+  - name: getRenderedContent()
+    returns: HTMLString
+    description: "Retrieves the complete, pre-rendered HTML body of the article from 'articleContext.renderedPage'."
+
+  - name: getTableOfContents()
+    returns: Array[Object]
+    description: "Parses the 'In this article' links from 'articleContext.miniTocItems'."
+
+  - name: getNavigationTree()
+    returns: Object
+    description: "Extracts and returns the complete hierarchical sidebar navigation structure from 'sidebarTree'."
+
+  - name: getBreadcrumbs()
+    returns: Array[Object]
+    description: "Retrieves the breadcrumb trail for the current page."
+
+  - name: listAvailableVersions()
+    returns: Array[String]
+    description: "Returns a list of keys for all available documentation versions (e.g., 'free-pro-team@latest', 'enterprise-server@3.17')."
+
+  - name: getLocalizationOptions()
+    returns: Object
+    description: "Extracts the map of supported languages from the 'languagesContext'."

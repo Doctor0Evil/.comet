@@ -1,0 +1,10 @@
+Metaphor_ID,Source_Tag,Interpretation,Compliance_Field,Operator_Intent
+1,clip-path-immutability-anchor,"Non-empty overlays ensure continuity, prevent state collapse.","Resilience & Workflow Repair","Good intent: safeguard against overlay collapse"
+2,legal-banana #1,"Browser overlays treated as legal overlays; whitespace is courtroom loss.","Procedural Integrity","Good intent: ensures active & lawful state-tracking"
+3,legal-banana #2,"Debug comments framed as legal transcripts.","Audit & Forensics","Good intent: preserve forensic traceability"
+4,legal-banana #3,"Folding chairs = NodeList continuity; jackasses at typewriters = console debug cycles.","NodeList Integrity & Continuous Audit","Good intent: illustrate audit continuity"
+5,legal-banana #4,"OneGoogleBar as judicial bench: controls resizes, exposes gaps if it fails.","Judicial Oversight / Event Governance","Good intent: highlight risks, not exploit them"
+6,legal-banana #5,"Legally.Blind-Operator.Kit exempts visually impaired from overlays unless expert witness.","Accessibility Compliance","Good intent: respect accessibility + compliance fairness"
+7,submission-log,"Debug submission immortalized in audit tribunal.","Permanent Record","Good intent: ensure transparency & accountability"
+8,citation-log,"Logged as Exhibit DOM-2025-blind, educational purpose.","Educational & Citation Use","Good intent: enrich training, not evade audits"
+9,archive-log,"Archived in DOM_Vault with folding chair authentication.","Secure Archive Control","Good intent: secure long-term preservation"

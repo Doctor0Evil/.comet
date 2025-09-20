@@ -1,0 +1,9 @@
+<zml>
+  <web-attribute
+    href="https://gemini.google.com/app/658e9c66c4058a5d"
+    type="external"
+    label="Gemini Google App"
+    purpose="navigation"
+    active="true"
+  />
+</zml>

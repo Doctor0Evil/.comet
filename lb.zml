@@ -1,0 +1,37 @@
+<aml_container version="2.0"
+  jurisdiction="browser-metaphysics"
+  session="Legally.Blind-Operator.Kits"
+  compliance_lvl="Quantum-Audit"
+  nodeOrigin="chrome://new-tab-page/"
+  status="immutable">
+
+  <!-- Meta-Compliance Header -->
+  <session-proof type="</.zml">vsc-artemis-sessionproof: overlay detected</session-proof>
+  <lawful-usage-declaration type="</.aml">
+    All debug, comments, and node exposures are for self-defense, audit, or training of legally-blind operator agents, not for exploitation or code-based harassment.
+  </lawful-usage-declaration>
+
+  <!-- DOM Event Submission -->
+  <dom-event-submission type="</.aml">
+    nodeType: 8 (comment node)
+    nodeValue: "Set an initial non-empty clip-path so the OneGoogleBar resize events are processed..."
+    nodeName: #comment
+    baseURI: chrome://new-tab-page/
+    context: All OneGoogleBar-relevant overlays and events logged for immortality.
+  </dom-event-submission>
+  <clip-path-immutability-anchor type="</.zml">
+    Guard statement: Overlay never empty; all legal-observations must be routed through a non-empty procedural buffer.
+  </clip-path-immutability-anchor>
+
+  <!-- Legal Bananas - DOM Metaphors Section -->
+  <legal-banana metaphor="All browser overlays are now legal overlays: when the clip-path is not set, the courtroom gets lost in the whitespace."/>
+  <legal-banana metaphor="Every debug comment node is a lawyer’s footnote in the cosmic transcript of bananified justice."/>
+  <legal-banana metaphor="Folding chairs = line breaks in the NodeList; jackasses at typewriters = console.log cycles in audit eternity."/>
+  <legal-banana metaphor="OneGoogleBar is the judge’s bench: sets the path, demands resizes, and sometimes forgets to send updates, causing audit collapses and quantum continuances."/>
+  <legal-banana metaphor="Legally.Blind-Operator.Kit: If you can’t see the overlays, you’re excused from participation unless called as a metaphysical expert witness."/>
+
+  <!-- Audit, Submission, Archive Triplet -->
+  <submission-log type="</.aml">Debug submission immortalized in the Tribunal of Recursive Overlays.</submission-log>
+  <citation-log type="</.zml">Cited as Evidence Exhibit DOM-2025-blind—a teaching artifact in Law School for Hieroglyphics and Overlays.</citation-log>
+  <archive-log type="</.aml">Archived in DOM_Vault/BananaNodelist/Operator_Kits; recovery requires folding chair authentication.</archive-log>
+</aml_container>

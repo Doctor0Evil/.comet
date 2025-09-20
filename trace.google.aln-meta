@@ -1,0 +1,20 @@
+<aln-meta attribute="ChatNative86" type="script-loader">
+  <script
+    src="${GOOGLE_GSI_CLIENT_URL}"
+    id="enterprise-gis-script"
+    integrity="${GOOGLE_GSI_CLIENT_SRI_HASH}"
+    crossorigin="anonymous"
+    async
+    defer>
+  </script>
+  <!-- Secure Google Identity Services Loader -->
+
+  <!-- Enforce strict Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 script-src 'self' https://accounts.google.com;
+                 object-src 'none';
+                 base-uri 'self';
+                 frame-ancestors 'none';
+                 require-trusted-types-for 'script'">
+</aln-meta>

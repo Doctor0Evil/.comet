@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go sync/atomic.Value Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chosen Palette: Slate Gray & Amber -->
+    <!-- Application Structure Plan: The application is structured into three main sections for clarity and usability. First, an introduction explains the purpose of atomic.Value. Second, the core of the page is an interactive simulator. This allows users to directly engage with the concepts by calling `Store`, `Load`, `Swap`, and `CompareAndSwap` on a visualized `Value` struct. This hands-on approach is the most effective way to understand the state changes and type-safety rules. An output log provides a step-by-step explanation of the internal logic, reinforcing the learning. Finally, a collapsible API reference section at the bottom provides a quick lookup for the functions and types discussed, making it a self-contained educational tool. -->
+    <!-- Visualization & Content Choices: The central `atomic.Value` is visualized as two components representing its internal `type` and `data` pointers. This is not a traditional chart but a conceptual diagram built with styled divs. User interaction through buttons and input fields triggers JavaScript functions that manipulate the state of this visual representation. This direct visual feedback is crucial for understanding the abstract concepts of atomic operations and type safety. For example, storing a new value will visually update the `data` pointer, and attempting to store a different type will trigger a visual error message, directly illustrating the package's rules. This is more effective than a static text description. The API reference uses a simple, clean list format for quick readability. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap');
+        .font-mono {
+            font-family: 'Roboto Mono', monospace;
+        }
+        .highlight-change {
+            animation: highlight 1s ease-out;
+        }
+        @keyframes highlight {
+            0% { background-color: #fef9c3; } /* yellow-100 */
+            100% { background-color: transparent; }
+        }
+        .log-entry {
+            border-left: 2px solid #e2e8f0;
+            padding-left: 1rem;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        .log-entry:hover {
+            border-left-color: #f59e0b; /* amber-500 */
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-800">Go's `sync/atomic.Value`</h1>
+            <p class="text-lg text-slate-600 mt-2">An Interactive Explainer</p>
+        </header>
+
+        <main class="bg-white rounded-lg shadow-xl p-6 md:p-8">
+            
+            <!-- Introduction Section -->
+            <section id="intro" class="mb-10 border-b pb-6">
+                <h2 class="text-2xl font-semibold text-slate-700 mb-3">What is `atomic.Value`?</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    In Go, the <code>sync/atomic</code> package provides low-level atomic memory primitives. The <code>Value</code> type is a specialized tool within this package designed to hold and atomically update values of any single, consistent type (<code>interface{}</code>). It's particularly useful for safely sharing configuration data or other values that are read by many goroutines but written to infrequently. This interactive tool helps visualize how <code>Value</code> works under the hood.
+                </p>
+            </section>
+
+            <!-- Interactive Simulator -->
+            <section id="simulator" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Controls -->
+                <div class="flex flex-col space-y-6">
+                    <h3 class="text-xl font-semibold text-slate-700 border-b pb-2">Operations</h3>
+                    
+                    <!-- Store Operation -->
+                    <div class="bg-slate-50 p-4 rounded-lg shadow-sm">
+                        <label for="store-input" class="block text-sm font-medium text-slate-700"><code>Store(value)</code></label>
+                        <p class="text-xs text-slate-500 mb-2">Sets the value. Must be the same type on subsequent calls.</p>
+                        <div class="flex items-center space-x-2">
+                            <input type="text" id="store-input" placeholder="e.g., hello, 123, true" class="flex-grow p-2 border border-slate-300 rounded-md focus:ring-amber-500 focus:border-amber-500">
+                            <button id="store-btn" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Store</button>
+                        </div>
+                    </div>
+
+                    <!-- Load Operation -->
+                    <div class="bg-slate-50 p-4 rounded-lg shadow-sm">
+                        <label class="block text-sm font-medium text-slate-700"><code>Load()</code></label>
+                        <p class="text-xs text-slate-500 mb-2">Reads the current value.</p>
+                        <button id="load-btn" class="bg-green-600 text-white font-bold py-2 px-4 rounded-md hover:bg-green-700 transition duration-300 w-full">Load</button>
+                    </div>
+
+                    <!-- Swap Operation -->
+                    <div class="bg-slate-50 p-4 rounded-lg shadow-sm">
+                        <label for="swap-input" class="block text-sm font-medium text-slate-700"><code>Swap(newValue)</code></label>
+                        <p class="text-xs text-slate-500 mb-2">Sets a new value and returns the old one.</p>
+                        <div class="flex items-center space-x-2">
+                            <input type="text" id="swap-input" placeholder="e.g., world, 456, false" class="flex-grow p-2 border border-slate-300 rounded-md focus:ring-amber-500 focus:border-amber-500">
+                            <button id="swap-btn" class="bg-orange-500 text-white font-bold py-2 px-4 rounded-md hover:bg-orange-600 transition duration-300">Swap</button>
+                        </div>
+                    </div>
+                    
+                    <!-- CompareAndSwap Operation -->
+                    <div class="bg-slate-50 p-4 rounded-lg shadow-sm">
+                        <label class="block text-sm font-medium text-slate-700"><code>CompareAndSwap(old, new)</code></label>
+                         <p class="text-xs text-slate-500 mb-2">Swaps only if the current value matches 'old'.</p>
+                        <div class="grid grid-cols-1 gap-2">
+                            <input type="text" id="cas-old-input" placeholder="Old value" class="w-full p-2 border border-slate-300 rounded-md focus:ring-amber-500 focus:border-amber-500">
+                            <input type="text" id="cas-new-input" placeholder="New value" class="w-full p-2 border border-slate-300 rounded-md focus:ring-amber-500 focus:border-amber-500">
+                            <button id="cas-btn" class="bg-purple-600 text-white font-bold py-2 px-4 rounded-md hover:bg-purple-700 transition duration-300 w-full">Compare & Swap</button>
+                        </div>
+                    </div>
+
+                    <button id="reset-btn" class="bg-gray-500 text-white font-bold py-2 px-4 rounded-md hover:bg-gray-600 transition duration-300 w-full">Reset Simulation</button>
+
+                </div>
+
+                <!-- Visualization and Log -->
+                <div class="flex flex-col space-y-6">
+                    <!-- Value State -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-700 border-b pb-2 mb-3">Internal State of `atomic.Value`</h3>
+                        <div class="bg-slate-100 p-4 rounded-lg font-mono text-sm">
+                            <div class="flex items-center space-x-4">
+                                <span class="text-slate-500">v.typ:</span>
+                                <span id="val-type" class="bg-white px-3 py-1 rounded shadow-inner text-slate-800 w-full">nil</span>
+                            </div>
+                            <div class="flex items-center space-x-4 mt-2">
+                                <span class="text-slate-500">v.data:</span>
+                                <span id="val-data" class="bg-white px-3 py-1 rounded shadow-inner text-slate-800 w-full">nil</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Log -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-700 border-b pb-2 mb-3">Execution Log</h3>
+                        <div id="log-output" class="bg-gray-900 text-white font-mono text-xs p-4 rounded-lg h-80 overflow-y-auto">
+                            <p class="text-gray-400">&gt; Ready for operations...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- API Reference Section -->
+            <section id="api-reference" class="mt-12">
+                <h2 class="text-2xl font-semibold text-slate-700 mb-4 border-b pb-2">`sync/atomic` Reference</h2>
+                <div class="space-y-4">
+                    <details class="bg-slate-50 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg text-slate-800">type Value</summary>
+                        <p class="mt-2 text-slate-600 font-mono text-sm">A Value provides an atomic load and store of a consistently typed value. The zero value for a Value returns nil from Load. Once Store has been called, a Value must not be copied.</p>
+                    </details>
+                     <details class="bg-slate-50 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg text-slate-800">func (v *Value) Load() (val interface{})</summary>
+                        <p class="mt-2 text-slate-600 font-mono text-sm">Load returns the value set by the most recent Store. It returns nil if there has been no call to Store for this Value.</p>
+                    </details>
+                    <details class="bg-slate-50 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg text-slate-800">func (v *Value) Store(val interface{})</summary>
+                        <p class="mt-2 text-slate-600 font-mono text-sm">Store sets the value of the Value to x. All calls to Store for a given Value must use values of the same concrete type. Store of an inconsistent type panics, as does Store(nil).</p>
+                    </details>
+                    <details class="bg-slate-50 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg text-slate-800">func (v *Value) Swap(new interface{}) (old interface{})</summary>
+                        <p class="mt-2 text-slate-600 font-mono text-sm">Swap stores new into Value and returns the previous value. It returns nil if the Value is empty. All calls to Swap for a given Value must use values of the same concrete type.</p>
+                    </details>
+                     <details class="bg-slate-50 p-4 rounded-lg cursor-pointer">
+                        <summary class="font-semibold text-lg text-slate-800">func (v *Value) CompareAndSwap(old, new interface{}) (swapped bool)</summary>
+                        <p class="mt-2 text-slate-600 font-mono text-sm">CompareAndSwap executes the compare-and-swap operation for the Value. All calls must use values of the same concrete type. Panics on inconsistent types or if new is nil.</p>
+                    </details>
+                </div>
+            </section>
+
+        </main>
+        <footer class="text-center mt-8 text-slate-500 text-sm">
+            <p>An interactive visualization of Go's <code>sync/atomic.Value</code>. Created from package documentation.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const valTypeEl = document.getElementById('val-type');
+            const valDataEl = document.getElementById('val-data');
+            const logOutput = document.getElementById('log-output');
+
+            const storeInput = document.getElementById('store-input');
+            const storeBtn = document.getElementById('store-btn');
+            
+            const loadBtn = document.getElementById('load-btn');
+            
+            const swapInput = document.getElementById('swap-input');
+            const swapBtn = document.getElementById('swap-btn');
+
+            const casOldInput = document.getElementById('cas-old-input');
+            const casNewInput = document.getElementById('cas-new-input');
+            const casBtn = document.getElementById('cas-btn');
+            
+            const resetBtn = document.getElementById('reset-btn');
+
+            let valueState = {
+                typ: null,
+                data: null
+            };
+
+            function log(message, type = 'info') {
+                const p = document.createElement('p');
+                p.textContent = `> ${message}`;
+                if (type === 'error') {
+                    p.className = 'text-red-400';
+                } else if (type === 'success') {
+                    p.className = 'text-green-400';
+                } else {
+                    p.className = 'text-gray-300';
+                }
+                logOutput.appendChild(p);
+                logOutput.scrollTop = logOutput.scrollHeight;
+            }
+
+            function parseInput(inputStr) {
+                if (inputStr.trim() === 'nil' || inputStr.trim() === 'null' || inputStr.trim() === '') {
+                    return null;
+                }
+                if (!isNaN(inputStr) && !isNaN(parseFloat(inputStr))) {
+                    return Number(inputStr);
+                }
+                if (inputStr.toLowerCase() === 'true') {
+                    return true;
+                }
+                if (inputStr.toLowerCase() === 'false') {
+                    return false;
+                }
+                return inputStr; // Treat as string
+            }
+            
+            function getValueType(val) {
+                if (val === null) return 'nil';
+                const type = typeof val;
+                if (type === 'number') return 'int'; // Simplified for demo
+                return type;
+            }
+
+            function updateUI() {
+                valTypeEl.textContent = valueState.typ ? `*${valueState.typ}` : 'nil';
+                valDataEl.textContent = valueState.data !== null ? `(points to: "${valueState.data}")` : 'nil';
+
+                valTypeEl.classList.add('highlight-change');
+                valDataEl.classList.add('highlight-change');
+                setTimeout(() => {
+                    valTypeEl.classList.remove('highlight-change');
+                    valDataEl.classList.remove('highlight-change');
+                }, 1000);
+            }
+
+            function handleStore() {
+                const val = parseInput(storeInput.value);
+                log(`Store("${storeInput.value}") called.`);
+
+                if (val === null) {
+                    log('panic: sync/atomic: store of nil value into Value', 'error');
+                    return;
+                }
+
+                const valType = getValueType(val);
+
+                if (valueState.typ === null) {
+                    log("First store. Atomically setting type and data.");
+                    valueState.typ = valType;
+                    valueState.data = val;
+                    log(`Type set to *${valType}. Data pointer updated.`, 'success');
+                } else if (valueState.typ === valType) {
+                    log(`Type match (*${valType}). Atomically updating data pointer.`);
+                    valueState.data = val;
+                     log(`Data pointer updated to "${val}".`, 'success');
+                } else {
+                    log(`panic: sync/atomic: store of inconsistently typed value into Value (stored *${valueState.typ}, trying to store *${valType})`, 'error');
+                }
+                
+                updateUI();
+                storeInput.value = '';
+            }
+            
+            function handleLoad() {
+                log('Load() called.');
+                if (valueState.typ === null) {
+                    log('Value is nil, nothing stored yet.', 'success');
+                    alert('Loaded value: nil');
+                } else {
+                    log(`Loaded value: "${valueState.data}" (type: *${valueState.typ})`, 'success');
+                    alert(`Loaded value: ${valueState.data}`);
+                }
+            }
+
+            function handleSwap() {
+                const newVal = parseInput(swapInput.value);
+                log(`Swap("${swapInput.value}") called.`);
+                
+                if (newVal === null) {
+                    log('panic: sync/atomic: swap of nil value into Value', 'error');
+                    return;
+                }
+
+                const newType = getValueType(newVal);
+                const oldVal = valueState.data;
+
+                if (valueState.typ === null) {
+                    log("Value is empty. Performing first store.");
+                    valueState.typ = newType;
+                    valueState.data = newVal;
+                    log(`Type set to *${newType}. Data pointer set to "${newVal}".`, 'success');
+                    log(`Swap returns: nil`, 'success');
+                    alert('Swapped. Previous value was: nil');
+                } else if (valueState.typ === newType) {
+                    log(`Type match (*${newType}). Atomically swapping data pointer.`);
+                    valueState.data = newVal;
+                    log(`New data pointer set to "${newVal}".`, 'success');
+                    log(`Swap returns: "${oldVal}"`, 'success');
+                    alert(`Swapped. Previous value was: ${oldVal}`);
+                } else {
+                    log(`panic: sync/atomic: swap of inconsistently typed value into Value (stored *${valueState.typ}, trying to swap *${newType})`, 'error');
+                }
+                
+                updateUI();
+                swapInput.value = '';
+            }
+            
+            function handleCompareAndSwap() {
+                const oldVal = parseInput(casOldInput.value);
+                const newVal = parseInput(casNewInput.value);
+                log(`CompareAndSwap(old: "${casOldInput.value}", new: "${casNewInput.value}") called.`);
+
+                if (newVal === null) {
+                    log('panic: sync/atomic: compare and swap of nil value into Value', 'error');
+                    return;
+                }
+                
+                const newType = getValueType(newVal);
+                const oldType = getValueType(oldVal);
+
+                if (oldVal !== null && newType !== oldType) {
+                     log(`panic: sync/atomic: compare and swap of inconsistently typed values (*${oldType} vs *${newType})`, 'error');
+                     return;
+                }
+
+                if (valueState.typ === null) {
+                    if (oldVal === null) {
+                        log("Value is nil and old is nil. Performing first store.");
+                        valueState.typ = newType;
+                        valueState.data = newVal;
+                        log(`Type set to *${newType}. Data pointer set to "${newVal}".`, 'success');
+                        log(`CompareAndSwap returns: true`, 'success');
+                        alert('CompareAndSwap successful: true');
+                    } else {
+                        log(`Current value is nil, but 'old' is not. No swap.`, 'info');
+                        log(`CompareAndSwap returns: false`, 'success');
+                        alert('CompareAndSwap failed: false');
+                    }
+                } else {
+                    if (valueState.typ !== newType) {
+                        log(`panic: sync/atomic: compare and swap of inconsistently typed value into Value (stored *${valueState.typ}, trying *${newType})`, 'error');
+                        return;
+                    }
+
+                    if (valueState.data === oldVal) {
+                        log(`Current value ("${valueState.data}") matches old value. Swapping.`);
+                        valueState.data = newVal;
+                        log(`Data pointer updated to "${newVal}".`, 'success');
+                        log(`CompareAndSwap returns: true`, 'success');
+                        alert('CompareAndSwap successful: true');
+                    } else {
+                        log(`Current value ("${valueState.data}") does not match old value ("${oldVal}"). No swap.`, 'info');
+                        log(`CompareAndSwap returns: false`, 'success');
+                        alert('CompareAndSwap failed: false');
+                    }
+                }
+
+                updateUI();
+                casOldInput.value = '';
+                casNewInput.value = '';
+            }
+            
+            function reset() {
+                valueState.typ = null;
+                valueState.data = null;
+                updateUI();
+                logOutput.innerHTML = '<p class="text-gray-400">> Simulator reset. Ready for operations...</p>';
+                storeInput.value = '';
+                swapInput.value = '';
+                casOldInput.value = '';
+                casNewInput.value = '';
+            }
+
+            storeBtn.addEventListener('click', handleStore);
+            loadBtn.addEventListener('click', handleLoad);
+            swapBtn.addEventListener('click', handleSwap);
+            casBtn.addEventListener('click', handleCompareAndSwap);
+            resetBtn.addEventListener('click', reset);
+            
+            // Allow Enter key to trigger actions
+            storeInput.addEventListener('keyup', (e) => e.key === 'Enter' && storeBtn.click());
+            swapInput.addEventListener('keyup', (e) => e.key === 'Enter' && swapBtn.click());
+            casNewInput.addEventListener('keyup', (e) => e.key === 'Enter' && casBtn.click());
+        });
+    </script>
+</body>
+</html>

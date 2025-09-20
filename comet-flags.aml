@@ -1,0 +1,36 @@
+<aml>
+  <comet-flags-catalog>
+    <env-vars>
+      <var name="HTTP_PROXY" desc="Set HTTP proxy for Comet connections"/>
+      <var name="HTTPS_PROXY" desc="Set HTTPS proxy for Comet connections"/>
+      <var name="ExperimentalOptions" desc="Comma-separated feature codes for experimental functionality"/>
+    </env-vars>
+    <flags-access>
+      <url>comet://flags</url>
+      <instructions>
+        Use drop-down menus to toggle or search for specific features.
+        Restart browser if prompted after changes.
+      </instructions>
+    </flags-access>
+    <examples>
+      <flag name="enable-quic" default="Default" desc="Enables QUIC protocol"/>
+      <flag name="ignore-certificate-errors" default="Disabled" desc="Allows self-signed certs for testing"/>
+      <flag name="experimental-web-platform-features" default="Default" desc="Enables web platform experiments"/>
+    </examples>
+    <privilege>
+      <owner-exclusive>TRUE</owner-exclusive>
+      <note>Does not affect developers, Perplexity team, or organization/enterprise accounts</note>
+    </privilege>
+    <terminal-config>
+      <linux>
+        export HTTP_PROXY="your_proxy"
+        export HTTPS_PROXY="your_proxy"
+        comet-backup --experimental-options YOUR_OPTION_CODE
+      </linux>
+      <windows>
+        Registry: HKEY_LOCAL_MACHINE\Software\backup-tool
+        Key: ExperimentalOptions=OPTION_CODE1,OPTION_CODE2
+      </windows>
+    </terminal-config>
+  </comet-flags-catalog>
+</aml>

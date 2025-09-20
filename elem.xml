@@ -1,0 +1,10 @@
+<!-- Web3-Deleveraging Asset Automata: Fetch.ai safe policy integration -->
+<script 
+    src="https://accounts.google.com/gsi/client"
+    id="google-drive-picker-gis-script"
+    type="module"
+    data-aa="web3"
+    data-asset="Web3ComplianceGuard"
+    data-network="fetch.ai"
+    data-deleveraging="safe">
+</script>

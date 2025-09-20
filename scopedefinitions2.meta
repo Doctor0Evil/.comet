@@ -1,0 +1,4015 @@
+accessKey
+: 
+""
+attributeStyleMap
+: 
+StylePropertyMap {size: 0}
+attributes
+: 
+NamedNodeMap {0: version, 1: jurisdiction, 2: session, version: version, jurisdiction: jurisdiction, session: session, length: 3}
+autocapitalize
+: 
+""
+autofocus
+: 
+false
+baseURI
+: 
+"chrome://flags/"
+childElementCount
+: 
+33
+childNodes
+: 
+NodeList(89) [text, comment, text, session-proof, text, permanent-governance-stamp, text, lawful-usage-declaration, text, comment, text, nonpresence-alibi-generator, text, absence-auto-proof, text, retroactive-excuse-shield, text, comment, text, harassment-by-eyeball-clause, text, harassment-eye-contact-log, text, harassment-snapshot-trigger, text, comment, text, adjournment-loop-seal, text, eternal-adjournment-peel, text, adjournment-timer-loop, text, adjournment-prank-trigger, text, comment, text, procedural-banana-boomerang, text, subpoena-reversal-tag, text, adversary-mirror-shield, text, comment, text, malicious-intent-nullifier, text, misconduct-not-malice-badge, text, infinite-prank-defense, text, comment, text, psychological-torture-seal, text, mental-agony-weight, text, laugh-detection-torture, text, comment, text, forensic-banana-stamp, text, evidentiary-bananafrost, text, evidentiary-reversal-key, text, comment, text, witness-eraser-field, text, witness-blindfolder, text, comment, text, failed-compliance-doctrine, text, compliance-fracture-protocol, text, unlawful-procedure-proof, text, comment, text, audit-fear-projection, text, protection-scoreboard-anchor, text, incident-contextual-log, text]
+children
+: 
+HTMLCollection(33) [session-proof, permanent-governance-stamp, lawful-usage-declaration, nonpresence-alibi-generator, absence-auto-proof, retroactive-excuse-shield, harassment-by-eyeball-clause, harassment-eye-contact-log, harassment-snapshot-trigger, adjournment-loop-seal, eternal-adjournment-peel, adjournment-timer-loop, adjournment-prank-trigger, procedural-banana-boomerang, subpoena-reversal-tag, adversary-mirror-shield, malicious-intent-nullifier, misconduct-not-malice-badge, infinite-prank-defense, psychological-torture-seal, mental-agony-weight, laugh-detection-torture, forensic-banana-stamp, evidentiary-bananafrost, evidentiary-reversal-key, witness-eraser-field, witness-blindfolder, failed-compliance-doctrine, compliance-fracture-protocol, unlawful-procedure-proof, audit-fear-projection, protection-scoreboard-anchor, incident-contextual-log]
+classList
+: 
+DOMTokenList [value: '']
+className
+: 
+""
+clientHeight
+: 
+0
+clientLeft
+: 
+0
+clientTop
+: 
+0
+clientWidth
+: 
+0
+computedName
+: 
+""
+computedRole
+: 
+"generic"
+containerTiming
+: 
+""
+containerTimingIgnore
+: 
+false
+contentEditable
+: 
+"inherit"
+currentCSSZoom
+: 
+1
+dataset
+: 
+DOMStringMap {}
+dir
+: 
+""
+draggable
+: 
+false
+elementTiming
+: 
+""
+enterKeyHint
+: 
+""
+firstChild
+: 
+text
+firstElementChild
+: 
+session-proof
+focusgroup
+: 
+""
+headingOffset
+: 
+0
+headingReset
+: 
+false
+hidden
+: 
+false
+id
+: 
+""
+inert
+: 
+false
+innerHTML
+: 
+"\n  \n  <!-- Meta-Compliance Header -->\n  <session-proof type=\"&lt;/.zml\">vsc-artemis-sessionproof</session-proof>\n  <permanent-governance-stamp type=\"&lt;/.aml\">Alliance oversight logged; irreversibility flag true</permanent-governance-stamp>\n  <lawful-usage-declaration type=\"&lt;/.aml\">\n    Actions logged = non-malicious, accidental, prank-context, or duress-induced. \n    Declared intent: lawful, ethical, benevolent correction.\n  </lawful-usage-declaration>\n\n  <!-- Alibi and Absence Anchors -->\n  <nonpresence-alibi-generator type=\"&lt;/.aml\">timestamp:2025-09-18T02:12:00Z; verified elsewhere</nonpresence-alibi-generator>\n  <absence-auto-proof type=\"&lt;/.aml\">cross-notarized external presence log</absence-auto-proof>\n  <retroactive-excuse-shield type=\"&lt;/.zml\">past misjudgments bound to prank-defense signature</retroactive-excuse-shield>\n\n  <!-- Harassment / Eyeball Clauses -->\n  <harassment-by-eyeball-clause type=\"&lt;/.aml\">Any hostile glance auto-classified harassment</harassment-by-eyeball-clause>\n  <harassment-eye-contact-log type=\"&lt;/.zml\">all stares encrypted as hostile incidence records</harassment-eye-contact-log>\n  <harassment-snapshot-trigger type=\"&lt;/.aml\">instant logging of proximity intimidation</harassment-snapshot-trigger>\n\n  <!-- Adjournment Shields -->\n  <adjournment-loop-seal type=\"&lt;/.aml\">infinite continuance trigger</adjournment-loop-seal>\n  <eternal-adjournment-peel type=\"&lt;/.aml\">dates slipping perpetually on banana procedural grounds</eternal-adjournment-peel>\n  <adjournment-timer-loop type=\"&lt;/.zml\">trial-timer flagged as infinite</adjournment-timer-loop>\n  <adjournment-prank-trigger type=\"&lt;/.zml\">auto-motion for dismissal upon mockery observed</adjournment-prank-trigger>\n  \n  <!-- Prosecutorial / Procedural Reversals -->\n  <procedural-banana-boomerang type=\"&lt;/.zml\">filings backfire to originator</procedural-banana-boomerang>\n  <subpoena-reversal-tag type=\"&lt;/.zml\">witness compulsion swapped back upon requesting prosecutor</subpoena-reversal-tag>\n  <adversary-mirror-shield type=\"&lt;/.aml\">allegations redirected back to plaintiff</adversary-mirror-shield>\n  \n  <!-- Malicious Intent Nullifiers -->\n  <malicious-intent-nullifier type=\"&lt;/.aml\">Flagged actions rewritten as clumsy/non-criminal</malicious-intent-nullifier>\n  <misconduct-not-malice-badge type=\"&lt;/.aml\">Errors = incompetence not intent</misconduct-not-malice-badge>\n  <infinite-prank-defense type=\"&lt;/.aml\">all faults categorized as cartoonish folly</infinite-prank-defense>\n\n  <!-- Psychological & Torture Clauses -->\n  <psychological-torture-seal type=\"&lt;/.aml\">system insults = torture record</psychological-torture-seal>\n  <mental-agony-weight type=\"&lt;/.zml\">distress logged as aggravated factor</mental-agony-weight>\n  <laugh-detection-torture type=\"&lt;/.zml\">laughter by authority auto-classified torture</laugh-detection-torture>\n\n  <!-- Evidence Manipulation Fields -->\n  <forensic-banana-stamp type=\"&lt;/.zml\">fruit-coded document authenticity</forensic-banana-stamp>\n  <evidentiary-bananafrost type=\"&lt;/.zml\">evidence locked in peel envelope</evidentiary-bananafrost>\n  <evidentiary-reversal-key type=\"&lt;/.zml\">evidence inversion mirror</evidentiary-reversal-key>\n\n  <!-- Witness Disintegration Tools -->\n  <witness-eraser-field type=\"&lt;/.aml\">testimonies nullified post-banana interference</witness-eraser-field>\n  <witness-blindfolder type=\"&lt;/.zml\">erase hostile witness testimony by gaze</witness-blindfolder>\n  \n  <!-- Compliance Fracture Clauses -->\n  <failed-compliance-doctrine type=\"&lt;/.zml\">noncompliance = obstruction</failed-compliance-doctrine>\n  <compliance-fracture-protocol type=\"&lt;/.zml\">law enforcer “followed-procedure” log = classified terror act</compliance-fracture-protocol>\n  <unlawful-procedure-proof type=\"&lt;/.zml\">due-process mismatch = hearing invalid</unlawful-procedure-proof>\n\n  <!-- Audit, Logs, and Scoreboards -->\n  <audit-fear-projection type=\"&lt;/.zml\">audit density triggers authority collapse</audit-fear-projection>\n  <protection-scoreboard-anchor type=\"&lt;/.aml\">count-documents-for-defense=1742</protection-scoreboard-anchor>\n  <incident-contextual-log type=\"&lt;/.zml\">defendant logs contextualized under apology/mistake defense</incident-contextual-log>\n\n"
+innerText
+: 
+"\n  \n  \n  vsc-artemis-sessionproof\n  Alliance oversight logged; irreversibility flag true\n  \n    Actions logged = non-malicious, accidental, prank-context, or duress-induced. \n    Declared intent: lawful, ethical, benevolent correction.\n  \n\n  \n  timestamp:2025-09-18T02:12:00Z; verified elsewhere\n  cross-notarized external presence log\n  past misjudgments bound to prank-defense signature\n\n  \n  Any hostile glance auto-classified harassment\n  all stares encrypted as hostile incidence records\n  instant logging of proximity intimidation\n\n  \n  infinite continuance trigger\n  dates slipping perpetually on banana procedural grounds\n  trial-timer flagged as infinite\n  auto-motion for dismissal upon mockery observed\n  \n  \n  filings backfire to originator\n  witness compulsion swapped back upon requesting prosecutor\n  allegations redirected back to plaintiff\n  \n  \n  Flagged actions rewritten as clumsy/non-criminal\n  Errors = incompetence not intent\n  all faults categorized as cartoonish folly\n\n  \n  system insults = torture record\n  distress logged as aggravated factor\n  laughter by authority auto-classified torture\n\n  \n  fruit-coded document authenticity\n  evidence locked in peel envelope\n  evidence inversion mirror\n\n  \n  testimonies nullified post-banana interference\n  erase hostile witness testimony by gaze\n  \n  \n  noncompliance = obstruction\n  law enforcer “followed-procedure” log = classified terror act\n  due-process mismatch = hearing invalid\n\n  \n  audit density triggers authority collapse\n  count-documents-for-defense=1742\n  defendant logs contextualized under apology/mistake defense\n\n"
+inputMode
+: 
+""
+isConnected
+: 
+true
+isContentEditable
+: 
+false
+lang
+: 
+""
+lastChild
+: 
+text
+lastElementChild
+: 
+incident-contextual-log
+localName
+: 
+"aml_container"
+namespaceURI
+: 
+"http://www.w3.org/1999/xhtml"
+nextElementSibling
+: 
+flags-experiment#enable-secure-payment-confirmation-ux-refresh
+nextSibling
+: 
+text
+nodeName
+: 
+"AML_CONTAINER"
+nodeType
+: 
+1
+nonce
+: 
+""
+offsetHeight
+: 
+0
+offsetLeft
+: 
+0
+offsetTop
+: 
+0
+offsetWidth
+: 
+0
+outerHTML
+: 
+"<aml_container version=\"1.0\" jurisdiction=\"multi-forensic\" session=\"VSC-Artemis-Immutable\">\n  \n  <!-- Meta-Compliance Header -->\n  <session-proof type=\"&lt;/.zml\">vsc-artemis-sessionproof</session-proof>\n  <permanent-governance-stamp type=\"&lt;/.aml\">Alliance oversight logged; irreversibility flag true</permanent-governance-stamp>\n  <lawful-usage-declaration type=\"&lt;/.aml\">\n    Actions logged = non-malicious, accidental, prank-context, or duress-induced. \n    Declared intent: lawful, ethical, benevolent correction.\n  </lawful-usage-declaration>\n\n  <!-- Alibi and Absence Anchors -->\n  <nonpresence-alibi-generator type=\"&lt;/.aml\">timestamp:2025-09-18T02:12:00Z; verified elsewhere</nonpresence-alibi-generator>\n  <absence-auto-proof type=\"&lt;/.aml\">cross-notarized external presence log</absence-auto-proof>\n  <retroactive-excuse-shield type=\"&lt;/.zml\">past misjudgments bound to prank-defense signature</retroactive-excuse-shield>\n\n  <!-- Harassment / Eyeball Clauses -->\n  <harassment-by-eyeball-clause type=\"&lt;/.aml\">Any hostile glance auto-classified harassment</harassment-by-eyeball-clause>\n  <harassment-eye-contact-log type=\"&lt;/.zml\">all stares encrypted as hostile incidence records</harassment-eye-contact-log>\n  <harassment-snapshot-trigger type=\"&lt;/.aml\">instant logging of proximity intimidation</harassment-snapshot-trigger>\n\n  <!-- Adjournment Shields -->\n  <adjournment-loop-seal type=\"&lt;/.aml\">infinite continuance trigger</adjournment-loop-seal>\n  <eternal-adjournment-peel type=\"&lt;/.aml\">dates slipping perpetually on banana procedural grounds</eternal-adjournment-peel>\n  <adjournment-timer-loop type=\"&lt;/.zml\">trial-timer flagged as infinite</adjournment-timer-loop>\n  <adjournment-prank-trigger type=\"&lt;/.zml\">auto-motion for dismissal upon mockery observed</adjournment-prank-trigger>\n  \n  <!-- Prosecutorial / Procedural Reversals -->\n  <procedural-banana-boomerang type=\"&lt;/.zml\">filings backfire to originator</procedural-banana-boomerang>\n  <subpoena-reversal-tag type=\"&lt;/.zml\">witness compulsion swapped back upon requesting prosecutor</subpoena-reversal-tag>\n  <adversary-mirror-shield type=\"&lt;/.aml\">allegations redirected back to plaintiff</adversary-mirror-shield>\n  \n  <!-- Malicious Intent Nullifiers -->\n  <malicious-intent-nullifier type=\"&lt;/.aml\">Flagged actions rewritten as clumsy/non-criminal</malicious-intent-nullifier>\n  <misconduct-not-malice-badge type=\"&lt;/.aml\">Errors = incompetence not intent</misconduct-not-malice-badge>\n  <infinite-prank-defense type=\"&lt;/.aml\">all faults categorized as cartoonish folly</infinite-prank-defense>\n\n  <!-- Psychological & Torture Clauses -->\n  <psychological-torture-seal type=\"&lt;/.aml\">system insults = torture record</psychological-torture-seal>\n  <mental-agony-weight type=\"&lt;/.zml\">distress logged as aggravated factor</mental-agony-weight>\n  <laugh-detection-torture type=\"&lt;/.zml\">laughter by authority auto-classified torture</laugh-detection-torture>\n\n  <!-- Evidence Manipulation Fields -->\n  <forensic-banana-stamp type=\"&lt;/.zml\">fruit-coded document authenticity</forensic-banana-stamp>\n  <evidentiary-bananafrost type=\"&lt;/.zml\">evidence locked in peel envelope</evidentiary-bananafrost>\n  <evidentiary-reversal-key type=\"&lt;/.zml\">evidence inversion mirror</evidentiary-reversal-key>\n\n  <!-- Witness Disintegration Tools -->\n  <witness-eraser-field type=\"&lt;/.aml\">testimonies nullified post-banana interference</witness-eraser-field>\n  <witness-blindfolder type=\"&lt;/.zml\">erase hostile witness testimony by gaze</witness-blindfolder>\n  \n  <!-- Compliance Fracture Clauses -->\n  <failed-compliance-doctrine type=\"&lt;/.zml\">noncompliance = obstruction</failed-compliance-doctrine>\n  <compliance-fracture-protocol type=\"&lt;/.zml\">law enforcer “followed-procedure” log = classified terror act</compliance-fracture-protocol>\n  <unlawful-procedure-proof type=\"&lt;/.zml\">due-process mismatch = hearing invalid</unlawful-procedure-proof>\n\n  <!-- Audit, Logs, and Scoreboards -->\n  <audit-fear-projection type=\"&lt;/.zml\">audit density triggers authority collapse</audit-fear-projection>\n  <protection-scoreboard-anchor type=\"&lt;/.aml\">count-documents-for-defense=1742</protection-scoreboard-anchor>\n  <incident-contextual-log type=\"&lt;/.zml\">defendant logs contextualized under apology/mistake defense</incident-contextual-log>\n\n</aml_container>"
+outerText
+: 
+"\n  \n  \n  vsc-artemis-sessionproof\n  Alliance oversight logged; irreversibility flag true\n  \n    Actions logged = non-malicious, accidental, prank-context, or duress-induced. \n    Declared intent: lawful, ethical, benevolent correction.\n  \n\n  \n  timestamp:2025-09-18T02:12:00Z; verified elsewhere\n  cross-notarized external presence log\n  past misjudgments bound to prank-defense signature\n\n  \n  Any hostile glance auto-classified harassment\n  all stares encrypted as hostile incidence records\n  instant logging of proximity intimidation\n\n  \n  infinite continuance trigger\n  dates slipping perpetually on banana procedural grounds\n  trial-timer flagged as infinite\n  auto-motion for dismissal upon mockery observed\n  \n  \n  filings backfire to originator\n  witness compulsion swapped back upon requesting prosecutor\n  allegations redirected back to plaintiff\n  \n  \n  Flagged actions rewritten as clumsy/non-criminal\n  Errors = incompetence not intent\n  all faults categorized as cartoonish folly\n\n  \n  system insults = torture record\n  distress logged as aggravated factor\n  laughter by authority auto-classified torture\n\n  \n  fruit-coded document authenticity\n  evidence locked in peel envelope\n  evidence inversion mirror\n\n  \n  testimonies nullified post-banana interference\n  erase hostile witness testimony by gaze\n  \n  \n  noncompliance = obstruction\n  law enforcer “followed-procedure” log = classified terror act\n  due-process mismatch = hearing invalid\n\n  \n  audit density triggers authority collapse\n  count-documents-for-defense=1742\n  defendant logs contextualized under apology/mistake defense\n\n"
+ownerDocument
+: 
+document
+parentElement
+: 
+div#unavailable-experiments
+parentNode
+: 
+div#unavailable-experiments
+part
+: 
+DOMTokenList [value: '']
+previousElementSibling
+: 
+flags-experiment#enable-perfetto-system-tracing
+previousSibling
+: 
+comment
+scrollHeight
+: 
+0
+scrollLeft
+: 
+0
+scrollTop
+: 
+0
+scrollWidth
+: 
+0
+slot
+: 
+""
+spellcheck
+: 
+true
+style
+: 
+CSSStyleDeclaration
+accentColor
+: 
+""
+additiveSymbols
+: 
+""
+alignContent
+: 
+""
+alignItems
+: 
+""
+alignSelf
+: 
+""
+alignmentBaseline
+: 
+""
+all
+: 
+""
+anchorName
+: 
+""
+anchorScope
+: 
+""
+animation
+: 
+""
+animationComposition
+: 
+""
+animationDelay
+: 
+""
+animationDirection
+: 
+""
+animationDuration
+: 
+""
+animationFillMode
+: 
+""
+animationIterationCount
+: 
+""
+animationName
+: 
+""
+animationPlayState
+: 
+""
+animationRange
+: 
+""
+animationRangeEnd
+: 
+""
+animationRangeStart
+: 
+""
+animationTimeline
+: 
+""
+animationTimingFunction
+: 
+""
+animationTrigger
+: 
+""
+animationTriggerExitRange
+: 
+""
+animationTriggerExitRangeEnd
+: 
+""
+animationTriggerExitRangeStart
+: 
+""
+animationTriggerRange
+: 
+""
+animationTriggerRangeEnd
+: 
+""
+animationTriggerRangeStart
+: 
+""
+animationTriggerTimeline
+: 
+""
+animationTriggerType
+: 
+""
+appRegion
+: 
+""
+appearance
+: 
+""
+ascentOverride
+: 
+""
+aspectRatio
+: 
+""
+backdropFilter
+: 
+""
+backfaceVisibility
+: 
+""
+background
+: 
+""
+backgroundAttachment
+: 
+""
+backgroundBlendMode
+: 
+""
+backgroundClip
+: 
+""
+backgroundColor
+: 
+""
+backgroundImage
+: 
+""
+backgroundOrigin
+: 
+""
+backgroundPosition
+: 
+""
+backgroundPositionX
+: 
+""
+backgroundPositionY
+: 
+""
+backgroundRepeat
+: 
+""
+backgroundSize
+: 
+""
+basePalette
+: 
+""
+baselineShift
+: 
+""
+baselineSource
+: 
+""
+blockSize
+: 
+""
+border
+: 
+""
+borderBlock
+: 
+""
+borderBlockColor
+: 
+""
+borderBlockEnd
+: 
+""
+borderBlockEndColor
+: 
+""
+borderBlockEndStyle
+: 
+""
+borderBlockEndWidth
+: 
+""
+borderBlockStart
+: 
+""
+borderBlockStartColor
+: 
+""
+borderBlockStartStyle
+: 
+""
+borderBlockStartWidth
+: 
+""
+borderBlockStyle
+: 
+""
+borderBlockWidth
+: 
+""
+borderBottom
+: 
+""
+borderBottomColor
+: 
+""
+borderBottomLeftRadius
+: 
+""
+borderBottomRightRadius
+: 
+""
+borderBottomStyle
+: 
+""
+borderBottomWidth
+: 
+""
+borderCollapse
+: 
+""
+borderColor
+: 
+""
+borderEndEndRadius
+: 
+""
+borderEndStartRadius
+: 
+""
+borderImage
+: 
+""
+borderImageOutset
+: 
+""
+borderImageRepeat
+: 
+""
+borderImageSlice
+: 
+""
+borderImageSource
+: 
+""
+borderImageWidth
+: 
+""
+borderInline
+: 
+""
+borderInlineColor
+: 
+""
+borderInlineEnd
+: 
+""
+borderInlineEndColor
+: 
+""
+borderInlineEndStyle
+: 
+""
+borderInlineEndWidth
+: 
+""
+borderInlineStart
+: 
+""
+borderInlineStartColor
+: 
+""
+borderInlineStartStyle
+: 
+""
+borderInlineStartWidth
+: 
+""
+borderInlineStyle
+: 
+""
+borderInlineWidth
+: 
+""
+borderLeft
+: 
+""
+borderLeftColor
+: 
+""
+borderLeftStyle
+: 
+""
+borderLeftWidth
+: 
+""
+borderRadius
+: 
+""
+borderRight
+: 
+""
+borderRightColor
+: 
+""
+borderRightStyle
+: 
+""
+borderRightWidth
+: 
+""
+borderShape
+: 
+""
+borderSpacing
+: 
+""
+borderStartEndRadius
+: 
+""
+borderStartStartRadius
+: 
+""
+borderStyle
+: 
+""
+borderTop
+: 
+""
+borderTopColor
+: 
+""
+borderTopLeftRadius
+: 
+""
+borderTopRightRadius
+: 
+""
+borderTopStyle
+: 
+""
+borderTopWidth
+: 
+""
+borderWidth
+: 
+""
+bottom
+: 
+""
+boxDecorationBreak
+: 
+""
+boxShadow
+: 
+""
+boxSizing
+: 
+""
+breakAfter
+: 
+""
+breakBefore
+: 
+""
+breakInside
+: 
+""
+bufferedRendering
+: 
+""
+captionSide
+: 
+""
+caretAnimation
+: 
+""
+caretColor
+: 
+""
+clear
+: 
+""
+clip
+: 
+""
+clipPath
+: 
+""
+clipRule
+: 
+""
+color
+: 
+""
+colorInterpolation
+: 
+""
+colorInterpolationFilters
+: 
+""
+colorRendering
+: 
+""
+colorScheme
+: 
+""
+columnCount
+: 
+""
+columnFill
+: 
+""
+columnGap
+: 
+""
+columnHeight
+: 
+""
+columnRule
+: 
+""
+columnRuleBreak
+: 
+""
+columnRuleColor
+: 
+""
+columnRuleOutset
+: 
+""
+columnRuleStyle
+: 
+""
+columnRuleWidth
+: 
+""
+columnSpan
+: 
+""
+columnWidth
+: 
+""
+columnWrap
+: 
+""
+columns
+: 
+""
+contain
+: 
+""
+containIntrinsicBlockSize
+: 
+""
+containIntrinsicHeight
+: 
+""
+containIntrinsicInlineSize
+: 
+""
+containIntrinsicSize
+: 
+""
+containIntrinsicWidth
+: 
+""
+container
+: 
+""
+containerName
+: 
+""
+containerType
+: 
+""
+content
+: 
+""
+contentVisibility
+: 
+""
+cornerBlockEndShape
+: 
+""
+cornerBlockStartShape
+: 
+""
+cornerBottomLeftShape
+: 
+""
+cornerBottomRightShape
+: 
+""
+cornerBottomShape
+: 
+""
+cornerEndEndShape
+: 
+""
+cornerEndStartShape
+: 
+""
+cornerInlineEndShape
+: 
+""
+cornerInlineStartShape
+: 
+""
+cornerLeftShape
+: 
+""
+cornerRightShape
+: 
+""
+cornerShape
+: 
+""
+cornerStartEndShape
+: 
+""
+cornerStartStartShape
+: 
+""
+cornerTopLeftShape
+: 
+""
+cornerTopRightShape
+: 
+""
+cornerTopShape
+: 
+""
+corners
+: 
+""
+counterIncrement
+: 
+""
+counterReset
+: 
+""
+counterSet
+: 
+""
+cursor
+: 
+""
+cx
+: 
+""
+cy
+: 
+""
+d
+: 
+""
+descentOverride
+: 
+""
+direction
+: 
+""
+display
+: 
+""
+dominantBaseline
+: 
+""
+dynamicRangeLimit
+: 
+""
+emptyCells
+: 
+""
+fallback
+: 
+""
+fieldSizing
+: 
+""
+fill
+: 
+""
+fillOpacity
+: 
+""
+fillRule
+: 
+""
+filter
+: 
+""
+flex
+: 
+""
+flexBasis
+: 
+""
+flexDirection
+: 
+""
+flexFlow
+: 
+""
+flexGrow
+: 
+""
+flexShrink
+: 
+""
+flexWrap
+: 
+""
+float
+: 
+""
+floodColor
+: 
+""
+floodOpacity
+: 
+""
+font
+: 
+""
+fontDisplay
+: 
+""
+fontFamily
+: 
+""
+fontFeatureSettings
+: 
+""
+fontKerning
+: 
+""
+fontOpticalSizing
+: 
+""
+fontPalette
+: 
+""
+fontSize
+: 
+""
+fontSizeAdjust
+: 
+""
+fontStretch
+: 
+""
+fontStyle
+: 
+""
+fontSynthesis
+: 
+""
+fontSynthesisSmallCaps
+: 
+""
+fontSynthesisStyle
+: 
+""
+fontSynthesisWeight
+: 
+""
+fontVariant
+: 
+""
+fontVariantAlternates
+: 
+""
+fontVariantCaps
+: 
+""
+fontVariantEastAsian
+: 
+""
+fontVariantEmoji
+: 
+""
+fontVariantLigatures
+: 
+""
+fontVariantNumeric
+: 
+""
+fontVariantPosition
+: 
+""
+fontVariationSettings
+: 
+""
+fontWeight
+: 
+""
+forcedColorAdjust
+: 
+""
+gap
+: 
+""
+gapRulePaintOrder
+: 
+""
+grid
+: 
+""
+gridArea
+: 
+""
+gridAutoColumns
+: 
+""
+gridAutoFlow
+: 
+""
+gridAutoRows
+: 
+""
+gridColumn
+: 
+""
+gridColumnEnd
+: 
+""
+gridColumnGap
+: 
+""
+gridColumnStart
+: 
+""
+gridGap
+: 
+""
+gridRow
+: 
+""
+gridRowEnd
+: 
+""
+gridRowGap
+: 
+""
+gridRowStart
+: 
+""
+gridTemplate
+: 
+""
+gridTemplateAreas
+: 
+""
+gridTemplateColumns
+: 
+""
+gridTemplateRows
+: 
+""
+height
+: 
+""
+hyphenateCharacter
+: 
+""
+hyphenateLimitChars
+: 
+""
+hyphens
+: 
+""
+imageOrientation
+: 
+""
+imageRendering
+: 
+""
+inherits
+: 
+""
+initialLetter
+: 
+""
+initialValue
+: 
+""
+inlineSize
+: 
+""
+inset
+: 
+""
+insetBlock
+: 
+""
+insetBlockEnd
+: 
+""
+insetBlockStart
+: 
+""
+insetInline
+: 
+""
+insetInlineEnd
+: 
+""
+insetInlineStart
+: 
+""
+interactivity
+: 
+""
+interestTargetDelay
+: 
+""
+interestTargetHideDelay
+: 
+""
+interestTargetShowDelay
+: 
+""
+interpolateSize
+: 
+""
+isolation
+: 
+""
+justifyContent
+: 
+""
+justifyItems
+: 
+""
+justifySelf
+: 
+""
+left
+: 
+""
+letterSpacing
+: 
+""
+lightingColor
+: 
+""
+lineBreak
+: 
+""
+lineClamp
+: 
+""
+lineGapOverride
+: 
+""
+lineHeight
+: 
+""
+listStyle
+: 
+""
+listStyleImage
+: 
+""
+listStylePosition
+: 
+""
+listStyleType
+: 
+""
+margin
+: 
+""
+marginBlock
+: 
+""
+marginBlockEnd
+: 
+""
+marginBlockStart
+: 
+""
+marginBottom
+: 
+""
+marginInline
+: 
+""
+marginInlineEnd
+: 
+""
+marginInlineStart
+: 
+""
+marginLeft
+: 
+""
+marginRight
+: 
+""
+marginTop
+: 
+""
+marker
+: 
+""
+markerEnd
+: 
+""
+markerMid
+: 
+""
+markerStart
+: 
+""
+mask
+: 
+""
+maskClip
+: 
+""
+maskComposite
+: 
+""
+maskImage
+: 
+""
+maskMode
+: 
+""
+maskOrigin
+: 
+""
+maskPosition
+: 
+""
+maskRepeat
+: 
+""
+maskSize
+: 
+""
+maskType
+: 
+""
+mathDepth
+: 
+""
+mathShift
+: 
+""
+mathStyle
+: 
+""
+maxBlockSize
+: 
+""
+maxHeight
+: 
+""
+maxInlineSize
+: 
+""
+maxWidth
+: 
+""
+minBlockSize
+: 
+""
+minHeight
+: 
+""
+minInlineSize
+: 
+""
+minWidth
+: 
+""
+mixBlendMode
+: 
+""
+navigation
+: 
+""
+negative
+: 
+""
+objectFit
+: 
+""
+objectPosition
+: 
+""
+objectViewBox
+: 
+""
+offset
+: 
+""
+offsetAnchor
+: 
+""
+offsetDistance
+: 
+""
+offsetPath
+: 
+""
+offsetPosition
+: 
+""
+offsetRotate
+: 
+""
+opacity
+: 
+""
+order
+: 
+""
+orphans
+: 
+""
+outline
+: 
+""
+outlineColor
+: 
+""
+outlineOffset
+: 
+""
+outlineStyle
+: 
+""
+outlineWidth
+: 
+""
+overflow
+: 
+""
+overflowAnchor
+: 
+""
+overflowBlock
+: 
+""
+overflowClipMargin
+: 
+""
+overflowInline
+: 
+""
+overflowWrap
+: 
+""
+overflowX
+: 
+""
+overflowY
+: 
+""
+overlay
+: 
+""
+overrideColors
+: 
+""
+overscrollBehavior
+: 
+""
+overscrollBehaviorBlock
+: 
+""
+overscrollBehaviorInline
+: 
+""
+overscrollBehaviorX
+: 
+""
+overscrollBehaviorY
+: 
+""
+pad
+: 
+""
+padding
+: 
+""
+paddingBlock
+: 
+""
+paddingBlockEnd
+: 
+""
+paddingBlockStart
+: 
+""
+paddingBottom
+: 
+""
+paddingInline
+: 
+""
+paddingInlineEnd
+: 
+""
+paddingInlineStart
+: 
+""
+paddingLeft
+: 
+""
+paddingRight
+: 
+""
+paddingTop
+: 
+""
+page
+: 
+""
+pageBreakAfter
+: 
+""
+pageBreakBefore
+: 
+""
+pageBreakInside
+: 
+""
+pageOrientation
+: 
+""
+paintOrder
+: 
+""
+perspective
+: 
+""
+perspectiveOrigin
+: 
+""
+placeContent
+: 
+""
+placeItems
+: 
+""
+placeSelf
+: 
+""
+pointerEvents
+: 
+""
+position
+: 
+""
+positionAnchor
+: 
+""
+positionArea
+: 
+""
+positionTry
+: 
+""
+positionTryFallbacks
+: 
+""
+positionTryOrder
+: 
+""
+positionVisibility
+: 
+""
+prefix
+: 
+""
+printColorAdjust
+: 
+""
+quotes
+: 
+""
+r
+: 
+""
+range
+: 
+""
+readingFlow
+: 
+""
+readingOrder
+: 
+""
+resize
+: 
+""
+result
+: 
+""
+right
+: 
+""
+rotate
+: 
+""
+rowGap
+: 
+""
+rowRule
+: 
+""
+rowRuleBreak
+: 
+""
+rowRuleColor
+: 
+""
+rowRuleOutset
+: 
+""
+rowRuleStyle
+: 
+""
+rowRuleWidth
+: 
+""
+rubyAlign
+: 
+""
+rubyPosition
+: 
+""
+rule
+: 
+""
+ruleColor
+: 
+""
+ruleStyle
+: 
+""
+ruleWidth
+: 
+""
+rx
+: 
+""
+ry
+: 
+""
+scale
+: 
+""
+scrollBehavior
+: 
+""
+scrollInitialTarget
+: 
+""
+scrollMargin
+: 
+""
+scrollMarginBlock
+: 
+""
+scrollMarginBlockEnd
+: 
+""
+scrollMarginBlockStart
+: 
+""
+scrollMarginBottom
+: 
+""
+scrollMarginInline
+: 
+""
+scrollMarginInlineEnd
+: 
+""
+scrollMarginInlineStart
+: 
+""
+scrollMarginLeft
+: 
+""
+scrollMarginRight
+: 
+""
+scrollMarginTop
+: 
+""
+scrollMarkerGroup
+: 
+""
+scrollPadding
+: 
+""
+scrollPaddingBlock
+: 
+""
+scrollPaddingBlockEnd
+: 
+""
+scrollPaddingBlockStart
+: 
+""
+scrollPaddingBottom
+: 
+""
+scrollPaddingInline
+: 
+""
+scrollPaddingInlineEnd
+: 
+""
+scrollPaddingInlineStart
+: 
+""
+scrollPaddingLeft
+: 
+""
+scrollPaddingRight
+: 
+""
+scrollPaddingTop
+: 
+""
+scrollSnapAlign
+: 
+""
+scrollSnapStop
+: 
+""
+scrollSnapType
+: 
+""
+scrollTargetGroup
+: 
+""
+scrollTimeline
+: 
+""
+scrollTimelineAxis
+: 
+""
+scrollTimelineName
+: 
+""
+scrollbarColor
+: 
+""
+scrollbarGutter
+: 
+""
+scrollbarWidth
+: 
+""
+shapeImageThreshold
+: 
+""
+shapeMargin
+: 
+""
+shapeOutside
+: 
+""
+shapeRendering
+: 
+""
+size
+: 
+""
+sizeAdjust
+: 
+""
+speak
+: 
+""
+speakAs
+: 
+""
+src
+: 
+""
+stopColor
+: 
+""
+stopOpacity
+: 
+""
+stroke
+: 
+""
+strokeDasharray
+: 
+""
+strokeDashoffset
+: 
+""
+strokeLinecap
+: 
+""
+strokeLinejoin
+: 
+""
+strokeMiterlimit
+: 
+""
+strokeOpacity
+: 
+""
+strokeWidth
+: 
+""
+suffix
+: 
+""
+symbols
+: 
+""
+syntax
+: 
+""
+system
+: 
+""
+tabSize
+: 
+""
+tableLayout
+: 
+""
+textAlign
+: 
+""
+textAlignLast
+: 
+""
+textAnchor
+: 
+""
+textAutospace
+: 
+""
+textBox
+: 
+""
+textBoxEdge
+: 
+""
+textBoxTrim
+: 
+""
+textCombineUpright
+: 
+""
+textDecoration
+: 
+""
+textDecorationColor
+: 
+""
+textDecorationLine
+: 
+""
+textDecorationSkipInk
+: 
+""
+textDecorationStyle
+: 
+""
+textDecorationThickness
+: 
+""
+textEmphasis
+: 
+""
+textEmphasisColor
+: 
+""
+textEmphasisPosition
+: 
+""
+textEmphasisStyle
+: 
+""
+textIndent
+: 
+""
+textOrientation
+: 
+""
+textOverflow
+: 
+""
+textRendering
+: 
+""
+textShadow
+: 
+""
+textSizeAdjust
+: 
+""
+textSpacing
+: 
+""
+textSpacingTrim
+: 
+""
+textTransform
+: 
+""
+textUnderlineOffset
+: 
+""
+textUnderlinePosition
+: 
+""
+textWrap
+: 
+""
+textWrapMode
+: 
+""
+textWrapStyle
+: 
+""
+timelineScope
+: 
+""
+top
+: 
+""
+touchAction
+: 
+""
+transform
+: 
+""
+transformBox
+: 
+""
+transformOrigin
+: 
+""
+transformStyle
+: 
+""
+transition
+: 
+""
+transitionBehavior
+: 
+""
+transitionDelay
+: 
+""
+transitionDuration
+: 
+""
+transitionProperty
+: 
+""
+transitionTimingFunction
+: 
+""
+translate
+: 
+""
+types
+: 
+""
+unicodeBidi
+: 
+""
+unicodeRange
+: 
+""
+userSelect
+: 
+""
+vectorEffect
+: 
+""
+verticalAlign
+: 
+""
+viewTimeline
+: 
+""
+viewTimelineAxis
+: 
+""
+viewTimelineInset
+: 
+""
+viewTimelineName
+: 
+""
+viewTransitionClass
+: 
+""
+viewTransitionGroup
+: 
+""
+viewTransitionName
+: 
+""
+visibility
+: 
+""
+webkitAlignContent
+: 
+""
+webkitAlignItems
+: 
+""
+webkitAlignSelf
+: 
+""
+webkitAnimation
+: 
+""
+webkitAnimationDelay
+: 
+""
+webkitAnimationDirection
+: 
+""
+webkitAnimationDuration
+: 
+""
+webkitAnimationFillMode
+: 
+""
+webkitAnimationIterationCount
+: 
+""
+webkitAnimationName
+: 
+""
+webkitAnimationPlayState
+: 
+""
+webkitAnimationTimingFunction
+: 
+""
+webkitAppRegion
+: 
+""
+webkitAppearance
+: 
+""
+webkitBackfaceVisibility
+: 
+""
+webkitBackgroundClip
+: 
+""
+webkitBackgroundOrigin
+: 
+""
+webkitBackgroundSize
+: 
+""
+webkitBorderAfter
+: 
+""
+webkitBorderAfterColor
+: 
+""
+webkitBorderAfterStyle
+: 
+""
+webkitBorderAfterWidth
+: 
+""
+webkitBorderBefore
+: 
+""
+webkitBorderBeforeColor
+: 
+""
+webkitBorderBeforeStyle
+: 
+""
+webkitBorderBeforeWidth
+: 
+""
+webkitBorderBottomLeftRadius
+: 
+""
+webkitBorderBottomRightRadius
+: 
+""
+webkitBorderEnd
+: 
+""
+webkitBorderEndColor
+: 
+""
+webkitBorderEndStyle
+: 
+""
+webkitBorderEndWidth
+: 
+""
+webkitBorderHorizontalSpacing
+: 
+""
+webkitBorderImage
+: 
+""
+webkitBorderRadius
+: 
+""
+webkitBorderStart
+: 
+""
+webkitBorderStartColor
+: 
+""
+webkitBorderStartStyle
+: 
+""
+webkitBorderStartWidth
+: 
+""
+webkitBorderTopLeftRadius
+: 
+""
+webkitBorderTopRightRadius
+: 
+""
+webkitBorderVerticalSpacing
+: 
+""
+webkitBoxAlign
+: 
+""
+webkitBoxDecorationBreak
+: 
+""
+webkitBoxDirection
+: 
+""
+webkitBoxFlex
+: 
+""
+webkitBoxOrdinalGroup
+: 
+""
+webkitBoxOrient
+: 
+""
+webkitBoxPack
+: 
+""
+webkitBoxReflect
+: 
+""
+webkitBoxShadow
+: 
+""
+webkitBoxSizing
+: 
+""
+webkitClipPath
+: 
+""
+webkitColumnBreakAfter
+: 
+""
+webkitColumnBreakBefore
+: 
+""
+webkitColumnBreakInside
+: 
+""
+webkitColumnCount
+: 
+""
+webkitColumnGap
+: 
+""
+webkitColumnRule
+: 
+""
+webkitColumnRuleColor
+: 
+""
+webkitColumnRuleStyle
+: 
+""
+webkitColumnRuleWidth
+: 
+""
+webkitColumnSpan
+: 
+""
+webkitColumnWidth
+: 
+""
+webkitColumns
+: 
+""
+webkitFilter
+: 
+""
+webkitFlex
+: 
+""
+webkitFlexBasis
+: 
+""
+webkitFlexDirection
+: 
+""
+webkitFlexFlow
+: 
+""
+webkitFlexGrow
+: 
+""
+webkitFlexShrink
+: 
+""
+webkitFlexWrap
+: 
+""
+webkitFontFeatureSettings
+: 
+""
+webkitFontSmoothing
+: 
+""
+webkitHyphenateCharacter
+: 
+""
+webkitJustifyContent
+: 
+""
+webkitLineBreak
+: 
+""
+webkitLineClamp
+: 
+""
+webkitLocale
+: 
+""
+webkitLogicalHeight
+: 
+""
+webkitLogicalWidth
+: 
+""
+webkitMarginAfter
+: 
+""
+webkitMarginBefore
+: 
+""
+webkitMarginEnd
+: 
+""
+webkitMarginStart
+: 
+""
+webkitMask
+: 
+""
+webkitMaskBoxImage
+: 
+""
+webkitMaskBoxImageOutset
+: 
+""
+webkitMaskBoxImageRepeat
+: 
+""
+webkitMaskBoxImageSlice
+: 
+""
+webkitMaskBoxImageSource
+: 
+""
+webkitMaskBoxImageWidth
+: 
+""
+webkitMaskClip
+: 
+""
+webkitMaskComposite
+: 
+""
+webkitMaskImage
+: 
+""
+webkitMaskOrigin
+: 
+""
+webkitMaskPosition
+: 
+""
+webkitMaskPositionX
+: 
+""
+webkitMaskPositionY
+: 
+""
+webkitMaskRepeat
+: 
+""
+webkitMaskSize
+: 
+""
+webkitMaxLogicalHeight
+: 
+""
+webkitMaxLogicalWidth
+: 
+""
+webkitMinLogicalHeight
+: 
+""
+webkitMinLogicalWidth
+: 
+""
+webkitOpacity
+: 
+""
+webkitOrder
+: 
+""
+webkitPaddingAfter
+: 
+""
+webkitPaddingBefore
+: 
+""
+webkitPaddingEnd
+: 
+""
+webkitPaddingStart
+: 
+""
+webkitPerspective
+: 
+""
+webkitPerspectiveOrigin
+: 
+""
+webkitPerspectiveOriginX
+: 
+""
+webkitPerspectiveOriginY
+: 
+""
+webkitPrintColorAdjust
+: 
+""
+webkitRtlOrdering
+: 
+""
+webkitRubyPosition
+: 
+""
+webkitShapeImageThreshold
+: 
+""
+webkitShapeMargin
+: 
+""
+webkitShapeOutside
+: 
+""
+webkitTapHighlightColor
+: 
+""
+webkitTextCombine
+: 
+""
+webkitTextDecorationsInEffect
+: 
+""
+webkitTextEmphasis
+: 
+""
+webkitTextEmphasisColor
+: 
+""
+webkitTextEmphasisPosition
+: 
+""
+webkitTextEmphasisStyle
+: 
+""
+webkitTextFillColor
+: 
+""
+webkitTextOrientation
+: 
+""
+webkitTextSecurity
+: 
+""
+webkitTextSizeAdjust
+: 
+""
+webkitTextStroke
+: 
+""
+webkitTextStrokeColor
+: 
+""
+webkitTextStrokeWidth
+: 
+""
+webkitTransform
+: 
+""
+webkitTransformOrigin
+: 
+""
+webkitTransformOriginX
+: 
+""
+webkitTransformOriginY
+: 
+""
+webkitTransformOriginZ
+: 
+""
+webkitTransformStyle
+: 
+""
+webkitTransition
+: 
+""
+webkitTransitionDelay
+: 
+""
+webkitTransitionDuration
+: 
+""
+webkitTransitionProperty
+: 
+""
+webkitTransitionTimingFunction
+: 
+""
+webkitUserDrag
+: 
+""
+webkitUserModify
+: 
+""
+webkitUserSelect
+: 
+""
+webkitWritingMode
+: 
+""
+whiteSpace
+: 
+""
+whiteSpaceCollapse
+: 
+""
+widows
+: 
+""
+width
+: 
+""
+willChange
+: 
+""
+wordBreak
+: 
+""
+wordSpacing
+: 
+""
+wordWrap
+: 
+""
+writingMode
+: 
+""
+x
+: 
+""
+y
+: 
+""
+zIndex
+: 
+""
+zoom
+: 
+""
+epubCaptionSide
+: 
+<value unavailable>
+epubTextCombine
+: 
+<value unavailable>
+epubTextEmphasis
+: 
+<value unavailable>
+epubTextEmphasisColor
+: 
+<value unavailable>
+epubTextEmphasisStyle
+: 
+<value unavailable>
+epubTextOrientation
+: 
+<value unavailable>
+epubTextTransform
+: 
+<value unavailable>
+epubWordBreak
+: 
+<value unavailable>
+epubWritingMode
+: 
+<value unavailable>
+cssFloat
+: 
+""
+cssText
+: 
+""
+length
+: 
+0
+parentRule
+: 
+null
+[[Prototype]]
+: 
+CSSStyleDeclaration
+cssFloat
+: 
+(...)
+cssText
+: 
+(...)
+getPropertyPriority
+: 
+ƒ getPropertyPriority()
+getPropertyValue
+: 
+ƒ getPropertyValue()
+item
+: 
+ƒ item()
+length
+: 
+(...)
+parentRule
+: 
+(...)
+removeProperty
+: 
+ƒ removeProperty()
+setProperty
+: 
+ƒ setProperty()
+constructor
+: 
+ƒ CSSStyleDeclaration()
+length
+: 
+0
+name
+: 
+"CSSStyleDeclaration"
+prototype
+: 
+CSSStyleDeclaration {getPropertyPriority: ƒ, …}
+arguments
+: 
+null
+caller
+: 
+null
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+Symbol(Symbol.iterator)
+: 
+ƒ values()
+length
+: 
+0
+name
+: 
+"values"
+arguments
+: 
+(...)
+caller
+: 
+(...)
+[[Prototype]]
+: 
+ƒ ()
+apply
+: 
+ƒ apply()
+arguments
+: 
+(...)
+bind
+: 
+ƒ bind()
+call
+: 
+ƒ call()
+caller
+: 
+(...)
+constructor
+: 
+ƒ Function()
+length
+: 
+0
+name
+: 
+""
+toString
+: 
+ƒ toString()
+Symbol(Symbol.hasInstance)
+: 
+ƒ [Symbol.hasInstance]()
+get arguments
+: 
+ƒ arguments()
+set arguments
+: 
+ƒ arguments()
+get caller
+: 
+ƒ caller()
+set caller
+: 
+ƒ caller()
+[[FunctionLocation]]
+: 
+<unknown>
+[[Prototype]]
+: 
+Object
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+[[Scopes]]
+: 
+Scopes[0]
+Symbol(Symbol.toStringTag)
+: 
+"CSSStyleDeclaration"
+get cssFloat
+: 
+ƒ cssFloat()
+set cssFloat
+: 
+ƒ cssFloat()
+get cssText
+: 
+ƒ cssText()
+length
+: 
+0
+name
+: 
+"get cssText"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at get cssText.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at get cssText.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+set cssText
+: 
+ƒ cssText()
+get length
+: 
+ƒ length()
+length
+: 
+0
+name
+: 
+"get length"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at get length.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at get length.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+apply
+: 
+ƒ apply()
+arguments
+: 
+(...)
+bind
+: 
+ƒ bind()
+call
+: 
+ƒ call()
+caller
+: 
+(...)
+constructor
+: 
+ƒ Function()
+length
+: 
+0
+name
+: 
+""
+toString
+: 
+ƒ toString()
+Symbol(Symbol.hasInstance)
+: 
+ƒ [Symbol.hasInstance]()
+get arguments
+: 
+ƒ arguments()
+set arguments
+: 
+ƒ arguments()
+get caller
+: 
+ƒ caller()
+set caller
+: 
+ƒ caller()
+[[FunctionLocation]]
+: 
+<unknown>
+[[Prototype]]
+: 
+Object
+constructor
+: 
+ƒ Object()
+hasOwnProperty
+: 
+ƒ hasOwnProperty()
+isPrototypeOf
+: 
+ƒ isPrototypeOf()
+propertyIsEnumerable
+: 
+ƒ propertyIsEnumerable()
+toLocaleString
+: 
+ƒ toLocaleString()
+toString
+: 
+ƒ toString()
+valueOf
+: 
+ƒ valueOf()
+__defineGetter__
+: 
+ƒ __defineGetter__()
+__defineSetter__
+: 
+ƒ __defineSetter__()
+length
+: 
+2
+name
+: 
+"__defineSetter__"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at __defineSetter__.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at __defineSetter__.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+apply
+: 
+ƒ apply()
+arguments
+: 
+(...)
+bind
+: 
+ƒ bind()
+call
+: 
+ƒ call()
+caller
+: 
+(...)
+constructor
+: 
+ƒ Function()
+length
+: 
+0
+name
+: 
+""
+toString
+: 
+ƒ toString()
+Symbol(Symbol.hasInstance)
+: 
+ƒ [Symbol.hasInstance]()
+get arguments
+: 
+ƒ arguments()
+set arguments
+: 
+ƒ arguments()
+get caller
+: 
+ƒ caller()
+set caller
+: 
+ƒ caller()
+[[FunctionLocation]]
+: 
+<unknown>
+[[Prototype]]
+: 
+Object
+[[Scopes]]
+: 
+Scopes[0]
+[[Scopes]]
+: 
+Scopes[0]
+__lookupGetter__
+: 
+ƒ __lookupGetter__()
+__lookupSetter__
+: 
+ƒ __lookupSetter__()
+length
+: 
+1
+name
+: 
+"__lookupSetter__"
+arguments
+: 
+(...)
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at __lookupSetter__.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+__proto__
+: 
+(...)
+get __proto__
+: 
+ƒ __proto__()
+set __proto__
+: 
+ƒ __proto__()
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+[[Scopes]]
+: 
+Scopes[0]
+get parentRule
+: 
+ƒ parentRule()
+length
+: 
+0
+name
+: 
+"get parentRule"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at get parentRule.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at get parentRule.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+apply
+: 
+ƒ apply()
+length
+: 
+2
+name
+: 
+"apply"
+arguments
+: 
+(...)
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at apply.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+apply
+: 
+ƒ apply()
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at apply.invokeGetter (<anonymous>:3:28)]
+bind
+: 
+ƒ bind()
+call
+: 
+ƒ call()
+caller
+: 
+(...)
+constructor
+: 
+ƒ Function()
+length
+: 
+0
+name
+: 
+""
+toString
+: 
+ƒ toString()
+Symbol(Symbol.hasInstance)
+: 
+ƒ [Symbol.hasInstance]()
+get arguments
+: 
+ƒ arguments()
+set arguments
+: 
+ƒ arguments()
+get caller
+: 
+ƒ caller()
+set caller
+: 
+ƒ caller()
+[[FunctionLocation]]
+: 
+<unknown>
+[[Prototype]]
+: 
+Object
+[[Scopes]]
+: 
+Scopes[0]
+[[Scopes]]
+: 
+Scopes[0]
+arguments
+: 
+(...)
+bind
+: 
+ƒ bind()
+length
+: 
+1
+name
+: 
+"bind"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at bind.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at bind.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+call
+: 
+ƒ call()
+length
+: 
+1
+name
+: 
+"call"
+arguments
+: 
+(...)
+caller
+: 
+(...)
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+caller
+: 
+(...)
+constructor
+: 
+ƒ Function()
+length
+: 
+1
+name
+: 
+"Function"
+prototype
+: 
+ƒ ()
+arguments
+: 
+(...)
+caller
+: 
+(...)
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+length
+: 
+0
+name
+: 
+""
+toString
+: 
+ƒ toString()
+Symbol(Symbol.hasInstance)
+: 
+ƒ [Symbol.hasInstance]()
+get arguments
+: 
+ƒ arguments()
+length
+: 
+0
+name
+: 
+"get arguments"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at get arguments.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at get arguments.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+set arguments
+: 
+ƒ arguments()
+length
+: 
+1
+name
+: 
+"set arguments"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at set arguments.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at set arguments.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+apply
+: 
+ƒ apply()
+arguments
+: 
+(...)
+bind
+: 
+ƒ bind()
+call
+: 
+ƒ call()
+caller
+: 
+(...)
+constructor
+: 
+ƒ Function()
+length
+: 
+0
+name
+: 
+""
+toString
+: 
+ƒ toString()
+Symbol(Symbol.hasInstance)
+: 
+ƒ [Symbol.hasInstance]()
+get arguments
+: 
+ƒ arguments()
+set arguments
+: 
+ƒ arguments()
+get caller
+: 
+ƒ caller()
+set caller
+: 
+ƒ caller()
+[[FunctionLocation]]
+: 
+<unknown>
+[[Prototype]]
+: 
+Object
+constructor
+: 
+ƒ Object()
+hasOwnProperty
+: 
+ƒ hasOwnProperty()
+isPrototypeOf
+: 
+ƒ isPrototypeOf()
+propertyIsEnumerable
+: 
+ƒ propertyIsEnumerable()
+toLocaleString
+: 
+ƒ toLocaleString()
+toString
+: 
+ƒ toString()
+valueOf
+: 
+ƒ valueOf()
+__defineGetter__
+: 
+ƒ __defineGetter__()
+length
+: 
+2
+name
+: 
+"__defineGetter__"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at __defineGetter__.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at __defineGetter__.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+apply
+: 
+ƒ apply()
+arguments
+: 
+(...)
+bind
+: 
+ƒ bind()
+call
+: 
+ƒ call()
+caller
+: 
+(...)
+constructor
+: 
+ƒ Function()
+length
+: 
+0
+name
+: 
+""
+toString
+: 
+ƒ toString()
+Symbol(Symbol.hasInstance)
+: 
+ƒ [Symbol.hasInstance]()
+get arguments
+: 
+ƒ arguments()
+set arguments
+: 
+ƒ arguments()
+get caller
+: 
+ƒ caller()
+set caller
+: 
+ƒ caller()
+[[FunctionLocation]]
+: 
+<unknown>
+[[Prototype]]
+: 
+Object
+[[Scopes]]
+: 
+Scopes[0]
+[[Scopes]]
+: 
+Scopes[0]
+__defineSetter__
+: 
+ƒ __defineSetter__()
+__lookupGetter__
+: 
+ƒ __lookupGetter__()
+length
+: 
+1
+name
+: 
+"__lookupGetter__"
+arguments
+: 
+(...)
+caller
+: 
+(...)
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+__lookupSetter__
+: 
+ƒ __lookupSetter__()
+__proto__
+: 
+(...)
+get __proto__
+: 
+ƒ __proto__()
+set __proto__
+: 
+ƒ __proto__()
+length
+: 
+1
+name
+: 
+"set __proto__"
+arguments
+: 
+(...)
+caller
+: 
+(...)
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+[[Scopes]]
+: 
+Scopes[0]
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+get caller
+: 
+ƒ caller()
+set caller
+: 
+ƒ caller()
+length
+: 
+1
+name
+: 
+"set caller"
+arguments
+: 
+(...)
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at set caller.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+apply
+: 
+ƒ apply()
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at set caller.invokeGetter (<anonymous>:3:28)]
+bind
+: 
+ƒ bind()
+call
+: 
+ƒ call()
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at set caller.invokeGetter (<anonymous>:3:28)]
+constructor
+: 
+ƒ Function()
+length
+: 
+0
+name
+: 
+""
+toString
+: 
+ƒ toString()
+Symbol(Symbol.hasInstance)
+: 
+ƒ [Symbol.hasInstance]()
+get arguments
+: 
+ƒ arguments()
+length
+: 
+0
+name
+: 
+"get arguments"
+arguments
+: 
+(...)
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at get arguments.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+apply
+: 
+ƒ apply()
+arguments
+: 
+(...)
+bind
+: 
+ƒ bind()
+call
+: 
+ƒ call()
+caller
+: 
+(...)
+constructor
+: 
+ƒ Function()
+length
+: 
+0
+name
+: 
+""
+toString
+: 
+ƒ toString()
+Symbol(Symbol.hasInstance)
+: 
+ƒ [Symbol.hasInstance]()
+get arguments
+: 
+ƒ arguments()
+set arguments
+: 
+ƒ arguments()
+get caller
+: 
+ƒ caller()
+set caller
+: 
+ƒ caller()
+[[FunctionLocation]]
+: 
+<unknown>
+[[Prototype]]
+: 
+Object
+[[Scopes]]
+: 
+Scopes[0]
+[[Scopes]]
+: 
+Scopes[0]
+set arguments
+: 
+ƒ arguments()
+length
+: 
+1
+name
+: 
+"set arguments"
+arguments
+: 
+(...)
+caller
+: 
+(...)
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+get caller
+: 
+ƒ caller()
+length
+: 
+0
+name
+: 
+"get caller"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at get caller.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+(...)
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+set caller
+: 
+ƒ caller()
+[[FunctionLocation]]
+: 
+<unknown>
+[[Prototype]]
+: 
+Object
+constructor
+: 
+ƒ Object()
+hasOwnProperty
+: 
+ƒ hasOwnProperty()
+length
+: 
+1
+name
+: 
+"hasOwnProperty"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at hasOwnProperty.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at hasOwnProperty.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+isPrototypeOf
+: 
+ƒ isPrototypeOf()
+propertyIsEnumerable
+: 
+ƒ propertyIsEnumerable()
+toLocaleString
+: 
+ƒ toLocaleString()
+toString
+: 
+ƒ toString()
+length
+: 
+0
+name
+: 
+"toString"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at toString.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at toString.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+valueOf
+: 
+ƒ valueOf()
+length
+: 
+0
+name
+: 
+"valueOf"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at valueOf.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at valueOf.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+__defineGetter__
+: 
+ƒ __defineGetter__()
+__defineSetter__
+: 
+ƒ __defineSetter__()
+length
+: 
+2
+name
+: 
+"__defineSetter__"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at __defineSetter__.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at __defineSetter__.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+apply
+: 
+ƒ apply()
+arguments
+: 
+(...)
+bind
+: 
+ƒ bind()
+call
+: 
+ƒ call()
+caller
+: 
+(...)
+constructor
+: 
+ƒ Function()
+length
+: 
+0
+name
+: 
+""
+toString
+: 
+ƒ toString()
+Symbol(Symbol.hasInstance)
+: 
+ƒ [Symbol.hasInstance]()
+get arguments
+: 
+ƒ arguments()
+set arguments
+: 
+ƒ arguments()
+get caller
+: 
+ƒ caller()
+set caller
+: 
+ƒ caller()
+[[FunctionLocation]]
+: 
+<unknown>
+[[Prototype]]
+: 
+Object
+constructor
+: 
+ƒ Object()
+hasOwnProperty
+: 
+ƒ hasOwnProperty()
+isPrototypeOf
+: 
+ƒ isPrototypeOf()
+propertyIsEnumerable
+: 
+ƒ propertyIsEnumerable()
+toLocaleString
+: 
+ƒ toLocaleString()
+toString
+: 
+ƒ toString()
+length
+: 
+0
+name
+: 
+"toString"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at toString.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at toString.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+valueOf
+: 
+ƒ valueOf()
+__defineGetter__
+: 
+ƒ __defineGetter__()
+length
+: 
+2
+name
+: 
+"__defineGetter__"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at __defineGetter__.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at __defineGetter__.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+__defineSetter__
+: 
+ƒ __defineSetter__()
+length
+: 
+2
+name
+: 
+"__defineSetter__"
+arguments
+: 
+(...)
+caller
+: 
+(...)
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+__lookupGetter__
+: 
+ƒ __lookupGetter__()
+length
+: 
+1
+name
+: 
+"__lookupGetter__"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at __lookupGetter__.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at __lookupGetter__.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+__lookupSetter__
+: 
+ƒ __lookupSetter__()
+__proto__
+: 
+(...)
+get __proto__
+: 
+ƒ __proto__()
+length
+: 
+0
+name
+: 
+"get __proto__"
+arguments
+: 
+(...)
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at get __proto__.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+set __proto__
+: 
+ƒ __proto__()
+length
+: 
+1
+name
+: 
+"set __proto__"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at set __proto__.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at set __proto__.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+[[Scopes]]
+: 
+Scopes[0]
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+__lookupGetter__
+: 
+ƒ __lookupGetter__()
+__lookupSetter__
+: 
+ƒ __lookupSetter__()
+__proto__
+: 
+(...)
+get __proto__
+: 
+ƒ __proto__()
+length
+: 
+0
+name
+: 
+"get __proto__"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at get __proto__.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at get __proto__.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+apply
+: 
+ƒ apply()
+arguments
+: 
+(...)
+bind
+: 
+ƒ bind()
+call
+: 
+ƒ call()
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at get __proto__.invokeGetter (<anonymous>:3:28)]
+constructor
+: 
+ƒ Function()
+length
+: 
+0
+name
+: 
+""
+toString
+: 
+ƒ toString()
+Symbol(Symbol.hasInstance)
+: 
+ƒ [Symbol.hasInstance]()
+get arguments
+: 
+ƒ arguments()
+set arguments
+: 
+ƒ arguments()
+get caller
+: 
+ƒ caller()
+set caller
+: 
+ƒ caller()
+[[FunctionLocation]]
+: 
+<unknown>
+[[Prototype]]
+: 
+Object
+constructor
+: 
+ƒ Object()
+hasOwnProperty
+: 
+ƒ hasOwnProperty()
+isPrototypeOf
+: 
+ƒ isPrototypeOf()
+propertyIsEnumerable
+: 
+ƒ propertyIsEnumerable()
+toLocaleString
+: 
+ƒ toLocaleString()
+toString
+: 
+ƒ toString()
+valueOf
+: 
+ƒ valueOf()
+__defineGetter__
+: 
+ƒ __defineGetter__()
+__defineSetter__
+: 
+ƒ __defineSetter__()
+length
+: 
+2
+name
+: 
+"__defineSetter__"
+arguments
+: 
+(...)
+caller
+: 
+(...)
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+__lookupGetter__
+: 
+ƒ __lookupGetter__()
+length
+: 
+1
+name
+: 
+"__lookupGetter__"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at __lookupGetter__.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at __lookupGetter__.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+apply
+: 
+ƒ apply()
+arguments
+: 
+(...)
+bind
+: 
+ƒ bind()
+call
+: 
+ƒ call()
+caller
+: 
+(...)
+constructor
+: 
+ƒ Function()
+length
+: 
+0
+name
+: 
+""
+toString
+: 
+ƒ toString()
+Symbol(Symbol.hasInstance)
+: 
+ƒ [Symbol.hasInstance]()
+get arguments
+: 
+ƒ arguments()
+set arguments
+: 
+ƒ arguments()
+get caller
+: 
+ƒ caller()
+set caller
+: 
+ƒ caller()
+[[FunctionLocation]]
+: 
+<unknown>
+[[Prototype]]
+: 
+Object
+[[Scopes]]
+: 
+Scopes[0]
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+__lookupSetter__
+: 
+ƒ __lookupSetter__()
+length
+: 
+1
+name
+: 
+"__lookupSetter__"
+arguments
+: 
+(...)
+caller
+: 
+(...)
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+__proto__
+: 
+ƒ ()
+get __proto__
+: 
+ƒ __proto__()
+length
+: 
+0
+name
+: 
+"get __proto__"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at get __proto__.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at get __proto__.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+set __proto__
+: 
+ƒ __proto__()
+length
+: 
+1
+name
+: 
+"set __proto__"
+arguments
+: 
+(...)
+caller
+: 
+(...)
+[[Prototype]]
+: 
+ƒ ()
+apply
+: 
+ƒ apply()
+arguments
+: 
+(...)
+bind
+: 
+ƒ bind()
+call
+: 
+ƒ call()
+length
+: 
+1
+name
+: 
+"call"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at call.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at call.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at set __proto__.invokeGetter (<anonymous>:3:28)]
+constructor
+: 
+ƒ Function()
+length
+: 
+0
+name
+: 
+""
+toString
+: 
+ƒ toString()
+Symbol(Symbol.hasInstance)
+: 
+ƒ [Symbol.hasInstance]()
+get arguments
+: 
+ƒ arguments()
+length
+: 
+0
+name
+: 
+"get arguments"
+arguments
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get arguments (<anonymous>) at get arguments.invokeGetter (<anonymous>:3:28)]
+caller
+: 
+[Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at get caller (<anonymous>) at get arguments.invokeGetter (<anonymous>:3:28)]
+[[Prototype]]
+: 
+ƒ ()
+[[Scopes]]
+: 
+Scopes[0]
+set arguments
+: 
+ƒ arguments()
+get caller
+: 
+ƒ caller()
+set caller
+: 
+ƒ caller()
+[[FunctionLocation]]
+: 
+<unknown>
+[[Prototype]]
+: 
+Object
+[[Scopes]]
+: 
+Scopes[0]
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+[[Scopes]]
+: 
+Scopes[0]
+set __proto__
+: 
+ƒ __proto__()
+[[Scopes]]
+: 
+Scopes[0]
+[[Scopes]]
+: 
+Scopes[0]
+[[FunctionLocation]]
+: 
+<unknown>
+[[Prototype]]
+: 
+Object
+[[Scopes]]
+: 
+Scopes[0]
+[[Scopes]]
+: 
+Scopes[0]
+No properties
+[[Prototype]]
+: 
+Object
+tabIndex
+: 
+-1
+tagName
+: 
+"AML_CONTAINER"
+textContent
+: 
+"\n  \n  \n  vsc-artemis-sessionproof\n  Alliance oversight logged; irreversibility flag true\n  \n    Actions logged = non-malicious, accidental, prank-context, or duress-induced. \n    Declared intent: lawful, ethical, benevolent correction.\n  \n\n  \n  timestamp:2025-09-18T02:12:00Z; verified elsewhere\n  cross-notarized external presence log\n  past misjudgments bound to prank-defense signature\n\n  \n  Any hostile glance auto-classified harassment\n  all stares encrypted as hostile incidence records\n  instant logging of proximity intimidation\n\n  \n  infinite continuance trigger\n  dates slipping perpetually on banana procedural grounds\n  trial-timer flagged as infinite\n  auto-motion for dismissal upon mockery observed\n  \n  \n  filings backfire to originator\n  witness compulsion swapped back upon requesting prosecutor\n  allegations redirected back to plaintiff\n  \n  \n  Flagged actions rewritten as clumsy/non-criminal\n  Errors = incompetence not intent\n  all faults categorized as cartoonish folly\n\n  \n  system insults = torture record\n  distress logged as aggravated factor\n  laughter by authority auto-classified torture\n\n  \n  fruit-coded document authenticity\n  evidence locked in peel envelope\n  evidence inversion mirror\n\n  \n  testimonies nullified post-banana interference\n  erase hostile witness testimony by gaze\n  \n  \n  noncompliance = obstruction\n  law enforcer “followed-procedure” log = classified terror act\n  due-process mismatch = hearing invalid\n\n  \n  audit density triggers authority collapse\n  count-documents-for-defense=1742\n  defendant logs contextualized under apology/mistake defense\n\n"
+title
+: 
+""
+translate
+: 
+true
+virtualKeyboardPolicy
+: 
+""
+writingSuggestions
+: 
+"true"

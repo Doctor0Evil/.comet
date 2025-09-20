@@ -1,0 +1,52 @@
+<aml>
+  <ChatNative86-ini>
+    <html>
+      <aml-interpretor engine="superdynamic" compliance="enterprise">
+        <init>
+          <command>whoami /user</command>
+          <command>Get-ComputerInfo | Select-Object WindowsProductName, WindowsVersion, OsArchitecture</command>
+        </init>
+        <log level="audit">System initialization complete</log>
+      </aml-interpretor>
+
+      <zml-config type="ui-theme" platform="windows13">
+        <color var="super-color" value="var(--dark-super-color)" />
+        <layout mode="full-responsive" />
+        <access-flag control="owner-exclusive"/>
+        <command>Set-ItemProperty -Path 'HKLM:\Software\Windows13' -Name 'DarkMode' -Value 1</command>
+      </zml-config>
+
+      <aln-gamemode type="lockpick-panel">
+        <element name="skillboost" value="+100" />
+        <element name="challenge-dice" value="roll-on-success" />
+        <prompt>
+          Rolling for system access...
+        </prompt>
+        <outcome>
+          <unlock>Access Granted. Science skill +100. Lockpick skill +100.</unlock>
+        </outcome>
+        <command>powershell -Command "Write-Host '🔓 Science/Lockpick granted!'"</command>
+      </aln-gamemode>
+
+      <aml-interpretor engine="continuous-monitoring" compliance="unity">
+        <sync>
+          <action>auditd /enable</action>
+          <action>securitypolicy /enforce all</action>
+        </sync>
+        <log level="secure">Continuous compliance validation active</log>
+      </aml-interpretor>
+
+      <zml-config type="server-panel" platform="windows13">
+        <element type="button" id="restart-server" action="Invoke-RestartComputer" />
+        <element type="status-monitor" id="uptime-tracker" source="system" />
+        <display text="Never Downtime - All8 Unity" />
+      </zml-config>
+
+      <aln-gamemode type="terminal-defense">
+        <command>New-NetFirewallRule -DisplayName "SuperUser-Allow" -Direction Inbound -Action Allow -Enabled True</command>
+        <achievement name="DominationMatrix" reward="instant-entry" />
+        <log level="success">Firewall enhanced for super.user</log>
+      </aln-gamemode>
+    </html>
+  </ChatNative86-ini>
+</aml>

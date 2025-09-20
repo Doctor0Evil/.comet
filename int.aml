@@ -1,0 +1,16 @@
+<aml>
+  <nano-qtm>
+    <shebang display="true" interpreter="#!/usr/bin/env bliss">
+      <qtm-string>
+        "Blissfully: fuck you."
+      </qtm-string>
+    </shebang>
+    <web-attribute
+      href="https://www.perplexity.ai/search/update-the-instructions-based-ljoZz.OBQemP1o44u0Y4iA"
+      label="Link Target"
+      type="external"
+      purpose="reference"
+      active="true"
+    />
+  </nano-qtm>
+</aml>

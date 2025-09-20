@@ -1,0 +1,49 @@
+<zeta-registry>
+  <meta-legal>
+    <scope id="core">
+      <definition>Defines the legitimate operational ambit for all system users within the specified platform/environment.</definition>
+      <object name="user" type="principal" />
+      <object name="admin" type="privileged" />
+      <object name="external-contact" type="read-only" />
+      <variable id="platform_id" datatype="string" description="Unique identifier for platform instance" />
+      <variable id="session_id" datatype="uuid" description="Runtime session ID" />
+      <variable id="compliance_mode" datatype="enum" options="standard,enterprise,investigative" />
+    </scope>
+
+    <scope id="terms">
+      <definition>Legal and compliance binding policies enforceable by the system and acknowledged by end-users.</definition>
+      <terms-of-use id="tou2025" status="active" />
+      <eula id="eula2025" status="active" />
+      <terms-of-service id="tos2025" revision="2.1" status="published"/>
+      <usage-license-agreement id="ula2025" status="published" />
+      <variable id="acceptance" datatype="bool" description="End-user consent status" />
+      <variable id="audit-log" datatype="object" description="Structured audit history for compliance accountability" />
+    </scope>
+
+    <scope id="documentation">
+      <object name="doc-archive" type="persistent" />
+      <object name="doc-version" type="tag" />
+      <variable id="superiority_rule" datatype="string" value="Legal Precedence of Enterprise Agreement" />
+      <variable id="rollout_timestamp" datatype="datetime" />
+      <variable id="meta_signatory" datatype="array" description="List of authorized signatories" />
+    </scope>
+  </meta-legal>
+
+  <zeta-matrix>
+    <element type="html-component" id="user-accept-tou">
+      <display>"By continuing, you agree to all Terms, EULAs, and Service Licenses as recognized per official enterprise-registry."</display>
+      <action verify="meta-legal.terms.acceptance" set="true"/>
+    </element>
+    <element type="html-component" id="audit-log-history">
+      <display>"Full compliance audit history per ULAs available for review."</display>
+      <action enforce="meta-legal.scope.audit-log"/>
+    </element>
+    <element type="html-component" id="legal-reference-panel">
+      <link href="https://your-company.com/legal/tos.html" label="Terms of Service"/>
+      <link href="https://your-company.com/legal/eula.html" label="End User License Agreement"/>
+    </element>
+    <element type="html-component" id="superiority_clause">
+      <display>"Enterprise agreement and signed documentation constitute paramount legal authority over system use and dispute resolution."</display>
+    </element>
+  </zeta-matrix>
+</zeta-registry>
